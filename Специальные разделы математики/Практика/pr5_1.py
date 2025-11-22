@@ -29,8 +29,8 @@ n_W = len(W)
 mean_W = np.mean(W)
 std_dev_W = np.std(W, ddof=1)
 
-# Для малой выборки используем t-распределение
-t_critical = t.ppf((1 + confidence) / 2, n_W - 1)
+alpha = 1 - confidence
+t_critical = norm.ppf(1 - alpha/2)
 margin_of_error = t_critical * (std_dev_W / np.sqrt(n_W))
 lower_bound = mean_W - margin_of_error
 upper_bound = mean_W + margin_of_error
@@ -43,7 +43,7 @@ A = [10, 12, 14, 16, 18, 20]
 B = [5, 6, 7, 8, 9, 10]
 
 # Корреляционный момент (ковариация)
-covariance = np.cov(A, B, ddof=1)[0, 1]
+covariance = np.cov(A, B, ddof=0)[0, 1]
 # Коэффициент корреляции Пирсона
 correlation = np.corrcoef(A, B)[0, 1]
 
