@@ -21,67 +21,72 @@
 		<Vars/>
 	</EnvironmentVariables>
 	<Script>
-		<NodeCount>3</NodeCount>
+		<NodeCount>6</NodeCount>
 		<Root>
 			<DisplayName>Сценарии</DisplayName>
 			<NodeIndex>1</NodeIndex>
 			<SubNodes>
 				<Count>1</Count>
 				<I_0>
-					<ID>2</ID>
+					<ID>1</ID>
 					<VendorName>TBGTextFileVendor</VendorName>
-					<Name>TextFile</Name>
-					<DisplayName>Текстовый файл (C:\Users\ro517\Рабочий стол\Univer\МАГ ИБ\mag_study\Технологии извлечения знаний из больших данных\Практика\task_5\popul.txt)</DisplayName>
-					<NodeIndex>3</NodeIndex>
+					<Name>Population</Name>
+					<DisplayName>Текстовый файл (C:\Users\ro517\Рабочий стол\Univer\МАГ ИБ\mag_study\Технологии извлечения знаний из больших данных\Практика\task_5\Кластеризация\Task_5_2_data_ansi.txt)</DisplayName>
+					<NodeIndex>2</NodeIndex>
 					<Component>
 						<Version>1</Version>
 						<ElapsedTime>15</ElapsedTime>
-						<StartTime>2025.11.12 20:09:30</StartTime>
-						<StopTime>2025.11.12 20:09:30</StopTime>
+						<StartTime>2025.11.25 11:53:41</StartTime>
+						<StopTime>2025.11.25 11:53:41</StopTime>
 						<ElapsedTimeFmt>00:00:00</ElapsedTimeFmt>
 						<StoppedByUser>1</StoppedByUser>
-						<FileName>C:\Users\ro517\Рабочий стол\Univer\МАГ ИБ\mag_study\Технологии извлечения знаний из больших данных\Практика\task_5\popul.txt</FileName>
+						<FileName>C:\Users\ro517\Рабочий стол\Univer\МАГ ИБ\mag_study\Технологии извлечения знаний из больших данных\Практика\task_5\Кластеризация\Task_5_2_data_ansi.txt</FileName>
 						<CharSet>chrANSI</CharSet>
 						<FixedFormat>0</FixedFormat>
-						<DecimalPoint>,</DecimalPoint>
+						<DateDelimiter>,</DateDelimiter>
 						<DateFormat>dd.MM.yyyy</DateFormat>
 						<TimeFormat>h:mm</TimeFormat>
 						<ValueTrue>Да</ValueTrue>
 						<ValueFalse>Нет</ValueFalse>
 						<ValueNull>null</ValueNull>
 						<Columns>
-							<Count>10</Count>
+							<Count>6</Count>
 							<I_0>
 								<ID>1</ID>
-								<Name>place</Name>
+								<Name>COL1</Name>
+								<DisplayName>Субъект</DisplayName>
 								<DataKind>dkDiscrete</DataKind>
 								<DataStatus>dsInfo</DataStatus>
 								<DataType>dtString</DataType>
 							</I_0>
 							<I_1>
 								<ID>2</ID>
-								<Name>type</Name>
-								<DataKind>dkContinuous</DataKind>
+								<Name>COL2</Name>
+								<DisplayName>Численность</DisplayName>
+								<DataKind>dkDiscrete</DataKind>
 								<DataStatus>dsInfo</DataStatus>
-								<DataType>dtFloat</DataType>
+								<DataType>dtString</DataType>
 							</I_1>
 							<I_2>
 								<ID>3</ID>
-								<Name>num</Name>
+								<Name>COL3</Name>
+								<DisplayName>Удельный вес городского населения</DisplayName>
 								<DataKind>dkContinuous</DataKind>
 								<DataStatus>dsInfo</DataStatus>
 								<DataType>dtFloat</DataType>
 							</I_2>
 							<I_3>
 								<ID>4</ID>
-								<Name>without_pop</Name>
+								<Name>COL4</Name>
+								<DisplayName>Изменение численности</DisplayName>
 								<DataKind>dkContinuous</DataKind>
 								<DataStatus>dsInfo</DataStatus>
 								<DataType>dtFloat</DataType>
 							</I_3>
 							<I_4>
 								<ID>5</ID>
-								<Name>with_pop</Name>
+								<Name>COL5</Name>
+								<DisplayName>Среднегодовая численность занятых</DisplayName>
 								<DataKind>dkContinuous</DataKind>
 								<DataStatus>dsInfo</DataStatus>
 								<DataType>dtFloat</DataType>
@@ -89,92 +94,59 @@
 							<I_5>
 								<ID>6</ID>
 								<Name>COL6</Name>
-								<DisplayName>1st</DisplayName>
+								<DisplayName>Среднедушевой доход</DisplayName>
 								<DataKind>dkContinuous</DataKind>
 								<DataStatus>dsInfo</DataStatus>
 								<DataType>dtFloat</DataType>
 							</I_5>
-							<I_6>
-								<ID>7</ID>
-								<Name>COL7</Name>
-								<DisplayName>5th</DisplayName>
-								<DataKind>dkContinuous</DataKind>
-								<DataStatus>dsInfo</DataStatus>
-								<DataType>dtFloat</DataType>
-							</I_6>
-							<I_7>
-								<ID>8</ID>
-								<Name>COL8</Name>
-								<DisplayName>50th</DisplayName>
-								<DataKind>dkContinuous</DataKind>
-								<DataStatus>dsInfo</DataStatus>
-								<DataType>dtFloat</DataType>
-							</I_7>
-							<I_8>
-								<ID>9</ID>
-								<Name>COL9</Name>
-								<DisplayName>95th</DisplayName>
-								<DataKind>dkContinuous</DataKind>
-								<DataStatus>dsInfo</DataStatus>
-								<DataType>dtFloat</DataType>
-							</I_8>
-							<I_9>
-								<ID>10</ID>
-								<Name>COL10</Name>
-								<DisplayName>99th</DisplayName>
-								<DataKind>dkDiscrete</DataKind>
-								<DataStatus>dsInfo</DataStatus>
-								<DataType>dtFloat</DataType>
-							</I_9>
 						</Columns>
 					</Component>
 					<Views>
-						<Count>2</Count>
+						<Count>1</Count>
 						<I_0>
 							<ID>1</ID>
 							<Name>TBGBrowseVendor</Name>
 							<VendorName>TBGBrowseVendor</VendorName>
 							<BrowseColumns>
 								<Columns>
-									<Count>10</Count>
+									<Count>6</Count>
 									<I_0>
 										<ID>1</ID>
-										<Name>place</Name>
+										<Name>COL1</Name>
 										<DataStatus>dsUsable</DataStatus>
 										<DataType>dtString</DataType>
-										<Width>136</Width>
+										<Width>203</Width>
 									</I_0>
 									<I_1>
 										<ID>2</ID>
-										<Name>type</Name>
+										<Name>COL2</Name>
 										<DataStatus>dsUsable</DataStatus>
-										<DataType>dtFloat</DataType>
-										<Alignment>taRightJustify</Alignment>
-										<Width>80</Width>
+										<DataType>dtString</DataType>
+										<Width>88</Width>
 									</I_1>
 									<I_2>
 										<ID>3</ID>
-										<Name>num</Name>
+										<Name>COL3</Name>
 										<DataStatus>dsUsable</DataStatus>
 										<DataType>dtFloat</DataType>
 										<Alignment>taRightJustify</Alignment>
-										<Width>80</Width>
+										<Width>92</Width>
 									</I_2>
 									<I_3>
 										<ID>4</ID>
-										<Name>without_pop</Name>
+										<Name>COL4</Name>
 										<DataStatus>dsUsable</DataStatus>
 										<DataType>dtFloat</DataType>
 										<Alignment>taRightJustify</Alignment>
-										<Width>88</Width>
+										<Width>79</Width>
 									</I_3>
 									<I_4>
 										<ID>5</ID>
-										<Name>with_pop</Name>
+										<Name>COL5</Name>
 										<DataStatus>dsUsable</DataStatus>
 										<DataType>dtFloat</DataType>
 										<Alignment>taRightJustify</Alignment>
-										<Width>80</Width>
+										<Width>84</Width>
 									</I_4>
 									<I_5>
 										<ID>6</ID>
@@ -182,47 +154,15 @@
 										<DataStatus>dsUsable</DataStatus>
 										<DataType>dtFloat</DataType>
 										<Alignment>taRightJustify</Alignment>
-										<Width>80</Width>
+										<Width>127</Width>
 									</I_5>
-									<I_6>
-										<ID>7</ID>
-										<Name>COL7</Name>
-										<DataStatus>dsUsable</DataStatus>
-										<DataType>dtFloat</DataType>
-										<Alignment>taRightJustify</Alignment>
-										<Width>80</Width>
-									</I_6>
-									<I_7>
-										<ID>8</ID>
-										<Name>COL8</Name>
-										<DataStatus>dsUsable</DataStatus>
-										<DataType>dtFloat</DataType>
-										<Alignment>taRightJustify</Alignment>
-										<Width>80</Width>
-									</I_7>
-									<I_8>
-										<ID>9</ID>
-										<Name>COL9</Name>
-										<DataStatus>dsUsable</DataStatus>
-										<DataType>dtFloat</DataType>
-										<Alignment>taRightJustify</Alignment>
-										<Width>80</Width>
-									</I_8>
-									<I_9>
-										<ID>10</ID>
-										<Name>COL10</Name>
-										<DataStatus>dsUsable</DataStatus>
-										<DataType>dtFloat</DataType>
-										<Alignment>taRightJustify</Alignment>
-										<Width>80</Width>
-									</I_9>
 								</Columns>
 							</BrowseColumns>
 							<FilterColumns/>
 							<VirtualDataSet>
 								<SortComponent>
-									<StartTime>2025.11.12 20:09:35</StartTime>
-									<StopTime>2025.11.12 20:09:35</StopTime>
+									<StartTime>2025.11.25 11:54:05</StartTime>
+									<StopTime>2025.11.25 11:54:05</StopTime>
 									<ElapsedTimeFmt>00:00:00</ElapsedTimeFmt>
 								</SortComponent>
 							</VirtualDataSet>
@@ -238,317 +178,181 @@
 								<StatNull>1</StatNull>
 								<StatColumns>
 									<Columns>
-										<Count>10</Count>
+										<Count>6</Count>
 										<I_0>
 											<ID>1</ID>
-											<Name>place</Name>
+											<Name>COL1</Name>
 											<DataStatus>dsInfo</DataStatus>
 											<DataType>dtString</DataType>
 										</I_0>
 										<I_1>
-											<ID>2</ID>
-											<Name>type</Name>
+											<ID>3</ID>
+											<Name>COL3</Name>
 											<DataStatus>dsInfo</DataStatus>
 											<DataType>dtFloat</DataType>
 										</I_1>
 										<I_2>
-											<ID>3</ID>
-											<Name>num</Name>
+											<ID>4</ID>
+											<Name>COL4</Name>
 											<DataStatus>dsInfo</DataStatus>
 											<DataType>dtFloat</DataType>
 										</I_2>
 										<I_3>
-											<ID>4</ID>
-											<Name>without_pop</Name>
+											<ID>5</ID>
+											<Name>COL5</Name>
 											<DataStatus>dsInfo</DataStatus>
 											<DataType>dtFloat</DataType>
 										</I_3>
 										<I_4>
-											<ID>5</ID>
-											<Name>with_pop</Name>
-											<DataStatus>dsInfo</DataStatus>
-											<DataType>dtFloat</DataType>
-										</I_4>
-										<I_5>
 											<ID>6</ID>
 											<Name>COL6</Name>
 											<DataStatus>dsInfo</DataStatus>
 											<DataType>dtFloat</DataType>
-										</I_5>
-										<I_6>
+										</I_4>
+										<I_5>
 											<ID>7</ID>
-											<Name>COL7</Name>
+											<Name>COL2</Name>
 											<DataStatus>dsInfo</DataStatus>
-											<DataType>dtFloat</DataType>
-										</I_6>
-										<I_7>
-											<ID>8</ID>
-											<Name>COL8</Name>
-											<DataStatus>dsInfo</DataStatus>
-											<DataType>dtFloat</DataType>
-										</I_7>
-										<I_8>
-											<ID>9</ID>
-											<Name>COL9</Name>
-											<DataStatus>dsInfo</DataStatus>
-											<DataType>dtFloat</DataType>
-										</I_8>
-										<I_9>
-											<ID>10</ID>
-											<Name>COL10</Name>
-											<DataStatus>dsInfo</DataStatus>
-											<DataType>dtFloat</DataType>
-										</I_9>
+											<DataType>dtString</DataType>
+										</I_5>
 									</Columns>
 								</StatColumns>
 							</Statistics>
 						</I_0>
-						<I_1>
-							<ID>2</ID>
-							<Name>TBGDiagramVendor</Name>
-							<VendorName>TBGDiagramVendor</VendorName>
-							<Axis>1</Axis>
-							<LegendAlignment>laRight</LegendAlignment>
-							<ChartType>ctLines</ChartType>
-							<LineWidth>2</LineWidth>
-							<XAxisLabelsFieldName>place</XAxisLabelsFieldName>
-							<DiagramColumns>
-								<Columns>
-									<Count>9</Count>
-									<I_0>
-										<ID>1</ID>
-										<Name>type</Name>
-										<DataStatus>dsUsable</DataStatus>
-										<DataType>dtFloat</DataType>
-										<Color>clRed</Color>
-									</I_0>
-									<I_1>
-										<ID>2</ID>
-										<Name>num</Name>
-										<DataStatus>dsUsable</DataStatus>
-										<DataType>dtFloat</DataType>
-										<Color>clLime</Color>
-									</I_1>
-									<I_2>
-										<ID>3</ID>
-										<Name>without_pop</Name>
-										<DataStatus>dsUsable</DataStatus>
-										<DataType>dtFloat</DataType>
-										<Color>clBlue</Color>
-									</I_2>
-									<I_3>
-										<ID>4</ID>
-										<Name>with_pop</Name>
-										<DataStatus>dsUsable</DataStatus>
-										<DataType>dtFloat</DataType>
-										<Color>8421631</Color>
-									</I_3>
-									<I_4>
-										<ID>5</ID>
-										<Name>COL6</Name>
-										<DataStatus>dsUsable</DataStatus>
-										<DataType>dtFloat</DataType>
-										<Color>8446927</Color>
-									</I_4>
-									<I_5>
-										<ID>6</ID>
-										<Name>COL7</Name>
-										<DataStatus>dsUsable</DataStatus>
-										<DataType>dtFloat</DataType>
-										<Color>16744576</Color>
-									</I_5>
-									<I_6>
-										<ID>7</ID>
-										<Name>COL8</Name>
-										<DataStatus>dsUsable</DataStatus>
-										<DataType>dtFloat</DataType>
-										<Color>16744703</Color>
-									</I_6>
-									<I_7>
-										<ID>8</ID>
-										<Name>COL9</Name>
-										<DataStatus>dsUsable</DataStatus>
-										<DataType>dtFloat</DataType>
-										<Color>clGreen</Color>
-									</I_7>
-									<I_8>
-										<ID>9</ID>
-										<Name>COL10</Name>
-										<DataStatus>dsUsable</DataStatus>
-										<DataType>dtFloat</DataType>
-										<Color>12615680</Color>
-									</I_8>
-								</Columns>
-							</DiagramColumns>
-						</I_1>
 					</Views>
 					<SubNodes>
-						<Count>1</Count>
+						<Count>2</Count>
 						<I_0>
-							<ID>1</ID>
+							<ID>2</ID>
 							<VendorName>TBGPartPreProcessVendor</VendorName>
 							<Name>PartPreProcess</Name>
-							<DisplayName>Парциальная предобработка (Аномалии, Фильтрация)</DisplayName>
+							<DisplayName>Парциальная предобработка (Восстановление, Аномалии, Фильтрация)</DisplayName>
 							<NodeIndex>4</NodeIndex>
 							<Component>
 								<PartTDS>
 									<Columns>
-										<Count>10</Count>
+										<Count>6</Count>
 										<I_0>
 											<ID>1</ID>
-											<Name>place</Name>
+											<Name>COL1</Name>
+											<DisplayName>Субъект</DisplayName>
 											<DataKind>dkDiscrete</DataKind>
 											<DataStatus>dsInfo</DataStatus>
 											<DataType>dtString</DataType>
 										</I_0>
 										<I_1>
-											<ID>2</ID>
-											<Name>type</Name>
+											<ID>3</ID>
+											<Name>COL3</Name>
+											<DisplayName>Удельный вес городского населения</DisplayName>
 											<DataKind>dkContinuous</DataKind>
-											<DataStatus>dsInfo</DataStatus>
+											<DataStatus>dsUsable</DataStatus>
 											<DataType>dtFloat</DataType>
+											<NeedProcess>1</NeedProcess>
+											<EI>1</EI>
+											<SD>edSmall</SD>
+											<MRG>rgMaxPlausibility</MRG>
+											<MSR>mdSubstractionNoise</MSR>
+											<SND>edSmall</SND>
 										</I_1>
 										<I_2>
-											<ID>3</ID>
-											<Name>num</Name>
+											<ID>4</ID>
+											<Name>COL4</Name>
+											<DisplayName>Изменение численности</DisplayName>
 											<DataKind>dkContinuous</DataKind>
-											<DataStatus>dsInfo</DataStatus>
+											<DataStatus>dsUsable</DataStatus>
 											<DataType>dtFloat</DataType>
+											<NeedProcess>1</NeedProcess>
+											<EI>1</EI>
+											<SD>edSmall</SD>
+											<MRG>rgMaxPlausibility</MRG>
+											<MSR>mdSubstractionNoise</MSR>
+											<SND>edSmall</SND>
 										</I_2>
 										<I_3>
-											<ID>4</ID>
-											<Name>without_pop</Name>
+											<ID>5</ID>
+											<Name>COL5</Name>
+											<DisplayName>Среднегодовая численность занятых</DisplayName>
 											<DataKind>dkContinuous</DataKind>
-											<DataStatus>dsInfo</DataStatus>
+											<DataStatus>dsUsable</DataStatus>
 											<DataType>dtFloat</DataType>
+											<NeedProcess>1</NeedProcess>
+											<EI>1</EI>
+											<SD>edSmall</SD>
+											<MRG>rgMaxPlausibility</MRG>
+											<MSR>mdSubstractionNoise</MSR>
+											<SND>edSmall</SND>
 										</I_3>
 										<I_4>
-											<ID>5</ID>
-											<Name>with_pop</Name>
-											<DataKind>dkContinuous</DataKind>
-											<DataStatus>dsInfo</DataStatus>
-											<DataType>dtFloat</DataType>
-										</I_4>
-										<I_5>
 											<ID>6</ID>
 											<Name>COL6</Name>
-											<DisplayName>1st</DisplayName>
+											<DisplayName>Среднедушевой доход</DisplayName>
 											<DataKind>dkContinuous</DataKind>
 											<DataStatus>dsUsable</DataStatus>
 											<DataType>dtFloat</DataType>
 											<NeedProcess>1</NeedProcess>
 											<EI>1</EI>
 											<SD>edSmall</SD>
-											<MRG>rgNoneReinsertGap</MRG>
+											<MRG>rgMaxPlausibility</MRG>
 											<MSR>mdSubstractionNoise</MSR>
 											<SND>edSmall</SND>
-										</I_5>
-										<I_6>
+										</I_4>
+										<I_5>
 											<ID>7</ID>
-											<Name>COL7</Name>
-											<DisplayName>5th</DisplayName>
-											<DataKind>dkContinuous</DataKind>
-											<DataStatus>dsUsable</DataStatus>
-											<DataType>dtFloat</DataType>
-											<NeedProcess>1</NeedProcess>
-											<EI>1</EI>
-											<SD>edSmall</SD>
-											<MRG>rgNoneReinsertGap</MRG>
-											<MSR>mdSubstractionNoise</MSR>
-											<SND>edSmall</SND>
-										</I_6>
-										<I_7>
-											<ID>8</ID>
-											<Name>COL8</Name>
-											<DisplayName>50th</DisplayName>
-											<DataKind>dkContinuous</DataKind>
-											<DataStatus>dsUsable</DataStatus>
-											<DataType>dtFloat</DataType>
-											<NeedProcess>1</NeedProcess>
-											<EI>1</EI>
-											<SD>edSmall</SD>
-											<MRG>rgNoneReinsertGap</MRG>
-											<MSR>mdSubstractionNoise</MSR>
-											<SND>edSmall</SND>
-										</I_7>
-										<I_8>
-											<ID>9</ID>
-											<Name>COL9</Name>
-											<DisplayName>95th</DisplayName>
-											<DataKind>dkContinuous</DataKind>
-											<DataStatus>dsUsable</DataStatus>
-											<DataType>dtFloat</DataType>
-											<NeedProcess>1</NeedProcess>
-											<EI>1</EI>
-											<SD>edSmall</SD>
-											<MRG>rgNoneReinsertGap</MRG>
-											<MSR>mdSubstractionNoise</MSR>
-											<SND>edSmall</SND>
-										</I_8>
-										<I_9>
-											<ID>10</ID>
-											<Name>COL10</Name>
-											<DisplayName>99th</DisplayName>
+											<Name>COL2</Name>
+											<DisplayName>Численность</DisplayName>
 											<DataKind>dkDiscrete</DataKind>
-											<DataStatus>dsUsable</DataStatus>
-											<DataType>dtFloat</DataType>
-											<NeedProcess>1</NeedProcess>
-											<EI>1</EI>
-											<SD>edSmall</SD>
-											<MRG>rgNoneReinsertGap</MRG>
-											<MSR>mdSubstractionNoise</MSR>
-											<SND>edSmall</SND>
-										</I_9>
+											<DataStatus>dsInfo</DataStatus>
+											<DataType>dtString</DataType>
+										</I_5>
 									</Columns>
 								</PartTDS>
 							</Component>
 							<Views>
-								<Count>2</Count>
+								<Count>1</Count>
 								<I_0>
 									<ID>1</ID>
 									<Name>TBGBrowseVendor</Name>
 									<VendorName>TBGBrowseVendor</VendorName>
 									<BrowseColumns>
 										<Columns>
-											<Count>10</Count>
+											<Count>6</Count>
 											<I_0>
 												<ID>1</ID>
-												<Name>place</Name>
+												<Name>COL1</Name>
 												<DataStatus>dsUsable</DataStatus>
 												<DataType>dtString</DataType>
-												<Width>136</Width>
+												<Width>196</Width>
 											</I_0>
 											<I_1>
 												<ID>2</ID>
-												<Name>type</Name>
+												<Name>COL2</Name>
 												<DataStatus>dsUsable</DataStatus>
-												<DataType>dtFloat</DataType>
-												<Alignment>taRightJustify</Alignment>
-												<Width>80</Width>
+												<DataType>dtString</DataType>
+												<Width>88</Width>
 											</I_1>
 											<I_2>
 												<ID>3</ID>
-												<Name>num</Name>
+												<Name>COL3</Name>
 												<DataStatus>dsUsable</DataStatus>
 												<DataType>dtFloat</DataType>
 												<Alignment>taRightJustify</Alignment>
-												<Width>80</Width>
+												<Width>119</Width>
 											</I_2>
 											<I_3>
 												<ID>4</ID>
-												<Name>without_pop</Name>
+												<Name>COL4</Name>
 												<DataStatus>dsUsable</DataStatus>
 												<DataType>dtFloat</DataType>
 												<Alignment>taRightJustify</Alignment>
-												<Width>88</Width>
+												<Width>129</Width>
 											</I_3>
 											<I_4>
 												<ID>5</ID>
-												<Name>with_pop</Name>
+												<Name>COL5</Name>
 												<DataStatus>dsUsable</DataStatus>
 												<DataType>dtFloat</DataType>
 												<Alignment>taRightJustify</Alignment>
-												<Width>80</Width>
+												<Width>130</Width>
 											</I_4>
 											<I_5>
 												<ID>6</ID>
@@ -556,47 +360,15 @@
 												<DataStatus>dsUsable</DataStatus>
 												<DataType>dtFloat</DataType>
 												<Alignment>taRightJustify</Alignment>
-												<Width>80</Width>
+												<Width>124</Width>
 											</I_5>
-											<I_6>
-												<ID>7</ID>
-												<Name>COL7</Name>
-												<DataStatus>dsUsable</DataStatus>
-												<DataType>dtFloat</DataType>
-												<Alignment>taRightJustify</Alignment>
-												<Width>80</Width>
-											</I_6>
-											<I_7>
-												<ID>8</ID>
-												<Name>COL8</Name>
-												<DataStatus>dsUsable</DataStatus>
-												<DataType>dtFloat</DataType>
-												<Alignment>taRightJustify</Alignment>
-												<Width>80</Width>
-											</I_7>
-											<I_8>
-												<ID>9</ID>
-												<Name>COL9</Name>
-												<DataStatus>dsUsable</DataStatus>
-												<DataType>dtFloat</DataType>
-												<Alignment>taRightJustify</Alignment>
-												<Width>80</Width>
-											</I_8>
-											<I_9>
-												<ID>10</ID>
-												<Name>COL10</Name>
-												<DataStatus>dsUsable</DataStatus>
-												<DataType>dtFloat</DataType>
-												<Alignment>taRightJustify</Alignment>
-												<Width>80</Width>
-											</I_9>
 										</Columns>
 									</BrowseColumns>
 									<FilterColumns/>
 									<VirtualDataSet>
 										<SortComponent>
-											<StartTime>2025.11.12 20:22:47</StartTime>
-											<StopTime>2025.11.12 20:22:47</StopTime>
+											<StartTime>2025.11.25 11:45:48</StartTime>
+											<StopTime>2025.11.25 11:45:48</StopTime>
 											<ElapsedTimeFmt>00:00:00</ElapsedTimeFmt>
 										</SortComponent>
 									</VirtualDataSet>
@@ -612,151 +384,3022 @@
 										<StatNull>1</StatNull>
 										<StatColumns>
 											<Columns>
-												<Count>10</Count>
+												<Count>6</Count>
 												<I_0>
 													<ID>1</ID>
-													<Name>place</Name>
+													<Name>COL1</Name>
+													<DataStatus>dsInfo</DataStatus>
+													<DataType>dtString</DataType>
+												</I_0>
+												<I_1>
+													<ID>3</ID>
+													<Name>COL3</Name>
+													<DataStatus>dsInfo</DataStatus>
+													<DataType>dtFloat</DataType>
+												</I_1>
+												<I_2>
+													<ID>4</ID>
+													<Name>COL4</Name>
+													<DataStatus>dsInfo</DataStatus>
+													<DataType>dtFloat</DataType>
+												</I_2>
+												<I_3>
+													<ID>5</ID>
+													<Name>COL5</Name>
+													<DataStatus>dsInfo</DataStatus>
+													<DataType>dtFloat</DataType>
+												</I_3>
+												<I_4>
+													<ID>6</ID>
+													<Name>COL6</Name>
+													<DataStatus>dsInfo</DataStatus>
+													<DataType>dtFloat</DataType>
+												</I_4>
+												<I_5>
+													<ID>7</ID>
+													<Name>COL2</Name>
+													<DataStatus>dsInfo</DataStatus>
+													<DataType>dtString</DataType>
+												</I_5>
+											</Columns>
+										</StatColumns>
+									</Statistics>
+								</I_0>
+							</Views>
+							<SubNodes>
+								<Count>2</Count>
+								<I_0>
+									<ID>1</ID>
+									<VendorName>TBGClusterizationTeachEngineVendor</VendorName>
+									<Name>ClusterizationTeachEngine</Name>
+									<DisplayName>Кластеризация (N = 5)</DisplayName>
+									<NodeIndex>5</NodeIndex>
+									<Component>
+										<AnalyticEngine>
+											<TunedDataSource>
+												<Columns>
+													<Count>6</Count>
+													<I_0>
+														<ID>1</ID>
+														<Name>COL1</Name>
+														<DisplayName>Субъект</DisplayName>
+														<DataKind>dkDiscrete</DataKind>
+														<DataStatus>dsInfo</DataStatus>
+														<DataType>dtString</DataType>
+													</I_0>
+													<I_1>
+														<ID>3</ID>
+														<Name>COL3</Name>
+														<DisplayName>Удельный вес городского населения</DisplayName>
+														<DataKind>dkContinuous</DataKind>
+														<DataStatus>dsInput</DataStatus>
+														<DataType>dtFloat</DataType>
+													</I_1>
+													<I_2>
+														<ID>4</ID>
+														<Name>COL4</Name>
+														<DisplayName>Изменение численности</DisplayName>
+														<DataKind>dkContinuous</DataKind>
+														<DataStatus>dsInput</DataStatus>
+														<DataType>dtFloat</DataType>
+													</I_2>
+													<I_3>
+														<ID>5</ID>
+														<Name>COL5</Name>
+														<DisplayName>Среднегодовая численность занятых</DisplayName>
+														<DataKind>dkContinuous</DataKind>
+														<DataStatus>dsInput</DataStatus>
+														<DataType>dtFloat</DataType>
+													</I_3>
+													<I_4>
+														<ID>6</ID>
+														<Name>COL6</Name>
+														<DisplayName>Среднедушевой доход</DisplayName>
+														<DataKind>dkContinuous</DataKind>
+														<DataStatus>dsInput</DataStatus>
+														<DataType>dtFloat</DataType>
+													</I_4>
+													<I_5>
+														<ID>7</ID>
+														<Name>COL2</Name>
+														<DisplayName>Численность</DisplayName>
+														<DataKind>dkDiscrete</DataKind>
+														<DataStatus>dsInfo</DataStatus>
+														<DataType>dtString</DataType>
+													</I_5>
+												</Columns>
+												<Statistics>
+													<Version>4</Version>
+													<StartTime>2025.11.25 11:54:43</StartTime>
+													<StopTime>2025.11.25 11:54:43</StopTime>
+													<ElapsedTimeFmt>00:00:00</ElapsedTimeFmt>
+													<StoppedByUser>1</StoppedByUser>
+													<RowCount>72</RowCount>
+													<Items>
+														<Count>6</Count>
+														<I_0>
+															<ID>1</ID>
+															<Name>COL1</Name>
+															<DisplayName>Субъект</DisplayName>
+															<DataKind>dkDiscrete</DataKind>
+															<DataStatus>dsInfo</DataStatus>
+															<DataType>dtString</DataType>
+														</I_0>
+														<I_1>
+															<ID>2</ID>
+															<Name>COL3</Name>
+															<DisplayName>Удельный вес городского населения</DisplayName>
+															<DataKind>dkContinuous</DataKind>
+															<DataStatus>dsInput</DataStatus>
+															<DataType>dtFloat</DataType>
+															<Computed>[sitMin,sitMax,sitAvg,sitSum,sitSumSq,sitStdDev,sitNullCount,sitUniqueValues,sitUniqueValuesCount,sitTotalCount]</Computed>
+															<Min>67.136810647228</Min>
+															<Max>73.4576337972164</Max>
+															<Avg>70.3205334229055</Avg>
+															<Sum>5063.07840644919</Sum>
+															<SumSq>356400.186913258</SumSq>
+															<StdDev>2.25742159334348</StdDev>
+														</I_1>
+														<I_2>
+															<ID>3</ID>
+															<Name>COL4</Name>
+															<DisplayName>Изменение численности</DisplayName>
+															<DataKind>dkContinuous</DataKind>
+															<DataStatus>dsUsable</DataStatus>
+															<DataType>dtFloat</DataType>
+															<Computed>[sitMin,sitMax,sitAvg,sitSum,sitSumSq,sitStdDev,sitNullCount,sitUniqueValues,sitUniqueValuesCount,sitTotalCount]</Computed>
+															<Min>-0.16924980925386</Min>
+															<Max>0.187262245426977</Max>
+															<Avg>0.009278868103843</Avg>
+															<Sum>0.668078503476696</Sum>
+															<SumSq>0.5871933290439</SumSq>
+															<StdDev>0.0904600383896253</StdDev>
+														</I_2>
+														<I_3>
+															<ID>4</ID>
+															<Name>COL5</Name>
+															<DisplayName>Среднегодовая численность занятых</DisplayName>
+															<DataKind>dkContinuous</DataKind>
+															<DataStatus>dsUsable</DataStatus>
+															<DataType>dtFloat</DataType>
+															<Computed>[sitMin,sitMax,sitAvg,sitSum,sitSumSq,sitStdDev,sitNullCount,sitUniqueValues,sitUniqueValuesCount,sitTotalCount]</Computed>
+															<Min>-589323.356168722</Min>
+															<Max>7611644.54755484</Max>
+															<Avg>1290587.91477525</Avg>
+															<Sum>92922329.8638183</Sum>
+															<SumSq>409918854102313</SumSq>
+															<StdDev>2020996.88888719</StdDev>
+														</I_3>
+														<I_4>
+															<ID>5</ID>
+															<Name>COL6</Name>
+															<DisplayName>Среднедушевой доход</DisplayName>
+															<DataKind>dkContinuous</DataKind>
+															<DataStatus>dsUsable</DataStatus>
+															<DataType>dtFloat</DataType>
+															<Computed>[sitMin,sitMax,sitAvg,sitSum,sitSumSq,sitStdDev,sitNullCount,sitUniqueValues,sitUniqueValuesCount,sitTotalCount]</Computed>
+															<Min>30015.3889458862</Min>
+															<Max>39530.0563917059</Max>
+															<Avg>33144.1579936063</Avg>
+															<Sum>2386379.37553965</Sum>
+															<SumSq>79596641705.6728</SumSq>
+															<StdDev>2659.30905487476</StdDev>
+														</I_4>
+														<I_5>
+															<ID>6</ID>
+															<Name>COL2</Name>
+															<DisplayName>Численность</DisplayName>
+															<DataKind>dkDiscrete</DataKind>
+															<DataStatus>dsInfo</DataStatus>
+															<DataType>dtString</DataType>
+														</I_5>
+													</Items>
+												</Statistics>
+												<Normalizers>
+													<Count>6</Count>
+													<I_0>
+														<ID>1</ID>
+														<Name>COL1</Name>
+														<DisplayName>Субъект</DisplayName>
+														<NormalizerVendor>TBGUnUsableColumnNormalizerVendor</NormalizerVendor>
+														<Normalizer/>
+													</I_0>
+													<I_1>
+														<ID>2</ID>
+														<Name>COL3</Name>
+														<DisplayName>Удельный вес городского населения</DisplayName>
+														<NormalizerVendor>TBGLinearNormalizerVendor</NormalizerVendor>
+														<Normalizer>
+															<Version>1</Version>
+															<NormColumns>
+																<Count>1</Count>
+																<I_0>
+																	<Name>COL3</Name>
+																	<DisplayName>Удельный вес городского населения</DisplayName>
+																	<DataKind>dkContinuous</DataKind>
+																	<DataStatus>dsInput</DataStatus>
+																	<DataType>dtFloat</DataType>
+																</I_0>
+															</NormColumns>
+															<LinearNormalizer>
+																<Enabled>1</Enabled>
+																<Max>1</Max>
+															</LinearNormalizer>
+														</Normalizer>
+													</I_1>
+													<I_2>
+														<ID>3</ID>
+														<Name>COL4</Name>
+														<DisplayName>Изменение численности</DisplayName>
+														<NormalizerVendor>TBGLinearNormalizerVendor</NormalizerVendor>
+														<Normalizer>
+															<Version>1</Version>
+															<NormColumns>
+																<Count>1</Count>
+																<I_0>
+																	<Name>COL4</Name>
+																	<DisplayName>Изменение численности</DisplayName>
+																	<DataKind>dkContinuous</DataKind>
+																	<DataStatus>dsInput</DataStatus>
+																	<DataType>dtFloat</DataType>
+																</I_0>
+															</NormColumns>
+															<LinearNormalizer>
+																<Enabled>1</Enabled>
+																<Max>1</Max>
+															</LinearNormalizer>
+														</Normalizer>
+													</I_2>
+													<I_3>
+														<ID>4</ID>
+														<Name>COL5</Name>
+														<DisplayName>Среднегодовая численность занятых</DisplayName>
+														<NormalizerVendor>TBGLinearNormalizerVendor</NormalizerVendor>
+														<Normalizer>
+															<Version>1</Version>
+															<NormColumns>
+																<Count>1</Count>
+																<I_0>
+																	<Name>COL5</Name>
+																	<DisplayName>Среднегодовая численность занятых</DisplayName>
+																	<DataKind>dkContinuous</DataKind>
+																	<DataStatus>dsInput</DataStatus>
+																	<DataType>dtFloat</DataType>
+																</I_0>
+															</NormColumns>
+															<LinearNormalizer>
+																<Enabled>1</Enabled>
+																<Max>1</Max>
+															</LinearNormalizer>
+														</Normalizer>
+													</I_3>
+													<I_4>
+														<ID>5</ID>
+														<Name>COL6</Name>
+														<DisplayName>Среднедушевой доход</DisplayName>
+														<NormalizerVendor>TBGLinearNormalizerVendor</NormalizerVendor>
+														<Normalizer>
+															<Version>1</Version>
+															<NormColumns>
+																<Count>1</Count>
+																<I_0>
+																	<Name>COL6</Name>
+																	<DisplayName>Среднедушевой доход</DisplayName>
+																	<DataKind>dkContinuous</DataKind>
+																	<DataStatus>dsInput</DataStatus>
+																	<DataType>dtFloat</DataType>
+																</I_0>
+															</NormColumns>
+															<LinearNormalizer>
+																<Enabled>1</Enabled>
+																<Max>1</Max>
+															</LinearNormalizer>
+														</Normalizer>
+													</I_4>
+													<I_5>
+														<ID>6</ID>
+														<Name>COL2</Name>
+														<DisplayName>Численность</DisplayName>
+														<NormalizerVendor>TBGUnUsableColumnNormalizerVendor</NormalizerVendor>
+														<Normalizer/>
+													</I_5>
+												</Normalizers>
+											</TunedDataSource>
+											<Kernel>
+												<State>ksTrained</State>
+												<InputColumns>
+													<Count>4</Count>
+													<I_0>
+														<ID>1</ID>
+														<Name>COL3</Name>
+														<DisplayName>Удельный вес городского населения</DisplayName>
+														<DataKind>dkContinuous</DataKind>
+														<DataStatus>dsInput</DataStatus>
+														<DataType>dtFloat</DataType>
+														<NormalizerIndex>2</NormalizerIndex>
+														<NormColumnIndex>1</NormColumnIndex>
+													</I_0>
+													<I_1>
+														<ID>2</ID>
+														<Name>COL4</Name>
+														<DisplayName>Изменение численности</DisplayName>
+														<DataKind>dkContinuous</DataKind>
+														<DataStatus>dsInput</DataStatus>
+														<DataType>dtFloat</DataType>
+														<NormalizerIndex>3</NormalizerIndex>
+														<NormColumnIndex>1</NormColumnIndex>
+													</I_1>
+													<I_2>
+														<ID>3</ID>
+														<Name>COL5</Name>
+														<DisplayName>Среднегодовая численность занятых</DisplayName>
+														<DataKind>dkContinuous</DataKind>
+														<DataStatus>dsInput</DataStatus>
+														<DataType>dtFloat</DataType>
+														<NormalizerIndex>4</NormalizerIndex>
+														<NormColumnIndex>1</NormColumnIndex>
+													</I_2>
+													<I_3>
+														<ID>4</ID>
+														<Name>COL6</Name>
+														<DisplayName>Среднедушевой доход</DisplayName>
+														<DataKind>dkContinuous</DataKind>
+														<DataStatus>dsInput</DataStatus>
+														<DataType>dtFloat</DataType>
+														<NormalizerIndex>5</NormalizerIndex>
+														<NormColumnIndex>1</NormColumnIndex>
+													</I_3>
+												</InputColumns>
+												<AdditionalColumns>
+													<Count>2</Count>
+													<I_0>
+														<ID>1</ID>
+														<Name>CLUSTERNUMBER</Name>
+														<DisplayName>Номер кластера</DisplayName>
+														<DataKind>dkDiscrete</DataKind>
+														<DataStatus>dsOutput</DataStatus>
+														<DataType>dtInteger</DataType>
+													</I_0>
+													<I_1>
+														<ID>2</ID>
+														<Name>CLUSTERDISTANCE</Name>
+														<DisplayName>Расстояние до центра кластера</DisplayName>
+														<DataKind>dkContinuous</DataKind>
+														<DataStatus>dsOutput</DataStatus>
+														<DataType>dtFloat</DataType>
+													</I_1>
+												</AdditionalColumns>
+												<Clusters>
+													<Count>5</Count>
+													<I_0>
+														<ID>1</ID>
+														<CaseCount>19</CaseCount>
+														<ErrorAvg>0.247086086501833</ErrorAvg>
+														<ErrorMax>0.437792024255928</ErrorMax>
+														<InputWeights>
+															<Count>4</Count>
+															<Values>0.854840324000368;0.579985155338848;0.128521085208442;0.25211803701905</Values>
+														</InputWeights>
+														<OutputStatistics>
+															<Version>4</Version>
+															<StartTime>2025.11.25 11:57:14</StartTime>
+															<StopTime>2025.11.25 11:57:14</StopTime>
+															<ElapsedTimeFmt>00:00:00</ElapsedTimeFmt>
+														</OutputStatistics>
+													</I_0>
+													<I_1>
+														<ID>2</ID>
+														<CaseCount>14</CaseCount>
+														<ErrorAvg>0.240943070468694</ErrorAvg>
+														<ErrorMax>0.340338058040741</ErrorMax>
+														<InputWeights>
+															<Count>4</Count>
+															<Values>0.669122804497319;0.23252056125428;0.12939376580839;0.0847590310542532</Values>
+														</InputWeights>
+														<OutputStatistics>
+															<Version>4</Version>
+															<StartTime>2025.11.25 11:57:14</StartTime>
+															<StopTime>2025.11.25 11:57:14</StopTime>
+															<ElapsedTimeFmt>00:00:00</ElapsedTimeFmt>
+														</OutputStatistics>
+													</I_1>
+													<I_2>
+														<ID>3</ID>
+														<CaseCount>9</CaseCount>
+														<ErrorAvg>0.398572863024719</ErrorAvg>
+														<ErrorMax>0.54143028718954</ErrorMax>
+														<InputWeights>
+															<Count>4</Count>
+															<Values>0.502112523505334;0.549116397277405;0.830567706796222;0.876176742289948</Values>
+														</InputWeights>
+														<OutputStatistics>
+															<Version>4</Version>
+															<StartTime>2025.11.25 11:57:14</StartTime>
+															<StopTime>2025.11.25 11:57:14</StopTime>
+															<ElapsedTimeFmt>00:00:00</ElapsedTimeFmt>
+														</OutputStatistics>
+													</I_2>
+													<I_3>
+														<ID>4</ID>
+														<CaseCount>8</CaseCount>
+														<ErrorAvg>0.307195200305812</ErrorAvg>
+														<ErrorMax>0.552631727219154</ErrorMax>
+														<InputWeights>
+															<Count>4</Count>
+															<Values>0.442046419662676;0.918223364742115;0.250680369413311;0.626262220406585</Values>
+														</InputWeights>
+														<OutputStatistics>
+															<Version>4</Version>
+															<StartTime>2025.11.25 11:57:14</StartTime>
+															<StopTime>2025.11.25 11:57:14</StopTime>
+															<ElapsedTimeFmt>00:00:00</ElapsedTimeFmt>
+														</OutputStatistics>
+													</I_3>
+													<I_4>
+														<ID>5</ID>
+														<CaseCount>22</CaseCount>
+														<ErrorAvg>0.265284733697158</ErrorAvg>
+														<ErrorMax>0.452423009982119</ErrorMax>
+														<InputWeights>
+															<Count>4</Count>
+															<Values>0.118203025821194;0.431464690763063;0.12593746268656;0.218348347917731</Values>
+														</InputWeights>
+														<OutputStatistics>
+															<Version>4</Version>
+															<StartTime>2025.11.25 11:57:14</StartTime>
+															<StopTime>2025.11.25 11:57:14</StopTime>
+															<ElapsedTimeFmt>00:00:00</ElapsedTimeFmt>
+														</OutputStatistics>
+													</I_4>
+												</Clusters>
+												<InputsMin>
+													<Count>4</Count>
+												</InputsMin>
+												<InputsMax>
+													<Count>4</Count>
+													<Values>1;1;1;1</Values>
+												</InputsMax>
+												<OutputsMin/>
+												<OutputsMax/>
+											</Kernel>
+										</AnalyticEngine>
+										<TeachDataSource>
+											<StartTime>2025.11.25 11:57:14</StartTime>
+											<StopTime>2025.11.25 11:57:14</StopTime>
+											<ElapsedTimeFmt>00:00:00</ElapsedTimeFmt>
+											<DataSourceTypeSet>[dstTeach,dstTest]</DataSourceTypeSet>
+											<SplitType>stRandom</SplitType>
+											<dstTeach>
+												<PercentOfDataSource>100</PercentOfDataSource>
+												<SortOrder>tsoAsc</SortOrder>
+												<SplitOrder>dstTeach</SplitOrder>
+												<Index>
+													<Count>72</Count>
+													<Values>57;36;21;43;48;69;12;26;54;60;52;44;53;49;17;35;71;16;34;70;13;27;55;65;4;10;22;46;61;20;42;45;56;25;51;33;67;8;18;38;29;59;68;9;19;39;32;66;5;11;23;47;64;1;3;7;15;31;63;0;2;6;14;30;62;41;40;37;24;50;28;58</Values>
+												</Index>
+											</dstTeach>
+											<dstTest>
+												<SortOrder>tsoAsc</SortOrder>
+												<SplitOrder>dstTest</SplitOrder>
+												<Index/>
+											</dstTest>
+										</TeachDataSource>
+										<Teacher>
+											<ElapsedTime>63</ElapsedTime>
+											<StartTime>2025.11.25 11:57:14</StartTime>
+											<StopTime>2025.11.25 11:57:14</StopTime>
+											<ElapsedTimeFmt>00:00:00</ElapsedTimeFmt>
+											<StoppedByUser>1</StoppedByUser>
+											<State>tstFinished</State>
+											<InitKernel>1</InitKernel>
+											<ClusterAlgorithmType>catKMeans</ClusterAlgorithmType>
+											<FixClustersCount>5</FixClustersCount>
+											<SignificanceLevel>0.001</SignificanceLevel>
+											<Errors>
+												<RecognitionErr>0.05</RecognitionErr>
+												<dstTeach>
+													<Rows>72</Rows>
+													<Avg>0.277066946404208</Avg>
+													<Max>0.552631727219154</Max>
+												</dstTeach>
+												<dstTest>
+													<Max>-1.7E308</Max>
+												</dstTest>
+											</Errors>
+										</Teacher>
+										<Random>
+											<RandSeed>974357940</RandSeed>
+										</Random>
+									</Component>
+									<Views>
+										<Count>4</Count>
+										<I_0>
+											<ID>1</ID>
+											<Name>TBGClusterViewVendor</Name>
+											<VendorName>TBGClusterViewVendor</VendorName>
+											<ClusterViewForm>
+												<ImportanceDirection>idClusters</ImportanceDirection>
+												<TableDetailed>1</TableDetailed>
+												<StatDetailed>1</StatDetailed>
+												<ColumnSettings>
+													<UniqueValueSortType>uvsRefCount</UniqueValueSortType>
+													<UniqueValueSortDirection>sdDesc</UniqueValueSortDirection>
+													<ContinuousCellInfos>[cciConfInt,cciAvg]</ContinuousCellInfos>
+													<DiscreteCellInfos>[]</DiscreteCellInfos>
+													<MinImportance>0</MinImportance>
+													<MaxImportance>100</MaxImportance>
+													<Columns>
+														<Count>4</Count>
+														<I_0>
+															<ID>1</ID>
+															<Name>COL3</Name>
+															<DisplayName>Удельный вес городского населения</DisplayName>
+															<DataKind>dkContinuous</DataKind>
+															<DataStatus>dsUsable</DataStatus>
+															<DataType>dtFloat</DataType>
+														</I_0>
+														<I_1>
+															<ID>2</ID>
+															<Name>COL4</Name>
+															<DisplayName>Изменение численности</DisplayName>
+															<DataKind>dkContinuous</DataKind>
+															<DataStatus>dsUsable</DataStatus>
+															<DataType>dtFloat</DataType>
+														</I_1>
+														<I_2>
+															<ID>3</ID>
+															<Name>COL5</Name>
+															<DisplayName>Среднегодовая численность занятых</DisplayName>
+															<DataKind>dkContinuous</DataKind>
+															<DataStatus>dsUsable</DataStatus>
+															<DataType>dtFloat</DataType>
+														</I_2>
+														<I_3>
+															<ID>4</ID>
+															<Name>COL6</Name>
+															<DisplayName>Среднедушевой доход</DisplayName>
+															<DataKind>dkContinuous</DataKind>
+															<DataStatus>dsUsable</DataStatus>
+															<DataType>dtFloat</DataType>
+														</I_3>
+													</Columns>
+												</ColumnSettings>
+												<ClusterSettings>
+													<MinSupport>0</MinSupport>
+													<MaxSupport>100</MaxSupport>
+													<Columns>
+														<Count>5</Count>
+														<I_0>
+															<ID>1</ID>
+															<Name>COL0</Name>
+															<DisplayName>0</DisplayName>
+															<DataKind>dkUndefined</DataKind>
+															<DataStatus>dsUsable</DataStatus>
+															<DataType>dtNone</DataType>
+														</I_0>
+														<I_1>
+															<ID>2</ID>
+															<Name>COL1</Name>
+															<DisplayName>1</DisplayName>
+															<DataKind>dkUndefined</DataKind>
+															<DataStatus>dsUsable</DataStatus>
+															<DataType>dtNone</DataType>
+														</I_1>
+														<I_2>
+															<ID>3</ID>
+															<Name>COL2</Name>
+															<DisplayName>2</DisplayName>
+															<DataKind>dkUndefined</DataKind>
+															<DataStatus>dsUsable</DataStatus>
+															<DataType>dtNone</DataType>
+														</I_2>
+														<I_3>
+															<ID>4</ID>
+															<Name>COL3</Name>
+															<DisplayName>3</DisplayName>
+															<DataKind>dkUndefined</DataKind>
+															<DataStatus>dsUsable</DataStatus>
+															<DataType>dtNone</DataType>
+														</I_3>
+														<I_4>
+															<ID>5</ID>
+															<Name>COL4</Name>
+															<DisplayName>4</DisplayName>
+															<DataKind>dkUndefined</DataKind>
+															<DataStatus>dsUsable</DataStatus>
+															<DataType>dtNone</DataType>
+														</I_4>
+													</Columns>
+												</ClusterSettings>
+												<BrowseView>
+													<BrowseColumns>
+														<Columns>
+															<Count>8</Count>
+															<I_0>
+																<ID>1</ID>
+																<Name>COL1</Name>
+																<DataStatus>dsUsable</DataStatus>
+																<DataType>dtString</DataType>
+																<Width>256</Width>
+															</I_0>
+															<I_1>
+																<ID>2</ID>
+																<Name>COL3</Name>
+																<DataStatus>dsUsable</DataStatus>
+																<DataType>dtFloat</DataType>
+																<Alignment>taRightJustify</Alignment>
+																<Width>256</Width>
+															</I_1>
+															<I_2>
+																<ID>3</ID>
+																<Name>COL4</Name>
+																<DataStatus>dsUsable</DataStatus>
+																<DataType>dtFloat</DataType>
+																<Alignment>taRightJustify</Alignment>
+																<Width>168</Width>
+															</I_2>
+															<I_3>
+																<ID>4</ID>
+																<Name>COL5</Name>
+																<DataStatus>dsUsable</DataStatus>
+																<DataType>dtFloat</DataType>
+																<Alignment>taRightJustify</Alignment>
+																<Width>256</Width>
+															</I_3>
+															<I_4>
+																<ID>5</ID>
+																<Name>COL6</Name>
+																<DataStatus>dsUsable</DataStatus>
+																<DataType>dtFloat</DataType>
+																<Alignment>taRightJustify</Alignment>
+																<Width>152</Width>
+															</I_4>
+															<I_5>
+																<ID>6</ID>
+																<Name>COL2</Name>
+																<DataStatus>dsUsable</DataStatus>
+																<DataType>dtString</DataType>
+																<Width>88</Width>
+															</I_5>
+															<I_6>
+																<ID>7</ID>
+																<Name>CLUSTERNUMBER</Name>
+																<DataStatus>dsUsable</DataStatus>
+																<DataType>dtInteger</DataType>
+																<Alignment>taRightJustify</Alignment>
+																<Width>112</Width>
+															</I_6>
+															<I_7>
+																<ID>8</ID>
+																<Name>CLUSTERDISTANCE</Name>
+																<DataStatus>dsUsable</DataStatus>
+																<DataType>dtFloat</DataType>
+																<Alignment>taRightJustify</Alignment>
+																<Width>232</Width>
+															</I_7>
+														</Columns>
+													</BrowseColumns>
+													<FilterColumns/>
+													<VirtualDataSet>
+														<SortComponent>
+															<StartTime>2025.11.25 11:57:52</StartTime>
+															<StopTime>2025.11.25 11:57:52</StopTime>
+															<ElapsedTimeFmt>00:00:00</ElapsedTimeFmt>
+														</SortComponent>
+													</VirtualDataSet>
+													<Statistics>
+														<Histogram>1</Histogram>
+														<StatMin>1</StatMin>
+														<StatMax>1</StatMax>
+														<StatAvg>1</StatAvg>
+														<StatStdDev>1</StatStdDev>
+														<StatSum>1</StatSum>
+														<StatSumSq>1</StatSumSq>
+														<StatUnique>1</StatUnique>
+														<StatNull>1</StatNull>
+														<StatColumns>
+															<Columns>
+																<Count>8</Count>
+																<I_0>
+																	<ID>1</ID>
+																	<Name>COL1</Name>
+																	<DataStatus>dsInfo</DataStatus>
+																	<DataType>dtString</DataType>
+																</I_0>
+																<I_1>
+																	<ID>2</ID>
+																	<Name>COL3</Name>
+																	<DataStatus>dsInfo</DataStatus>
+																	<DataType>dtFloat</DataType>
+																</I_1>
+																<I_2>
+																	<ID>3</ID>
+																	<Name>COL4</Name>
+																	<DataStatus>dsInfo</DataStatus>
+																	<DataType>dtFloat</DataType>
+																</I_2>
+																<I_3>
+																	<ID>4</ID>
+																	<Name>COL5</Name>
+																	<DataStatus>dsInfo</DataStatus>
+																	<DataType>dtFloat</DataType>
+																</I_3>
+																<I_4>
+																	<ID>5</ID>
+																	<Name>COL6</Name>
+																	<DataStatus>dsInfo</DataStatus>
+																	<DataType>dtFloat</DataType>
+																</I_4>
+																<I_5>
+																	<ID>6</ID>
+																	<Name>COL2</Name>
+																	<DataStatus>dsInfo</DataStatus>
+																	<DataType>dtString</DataType>
+																</I_5>
+																<I_6>
+																	<ID>7</ID>
+																	<Name>CLUSTERNUMBER</Name>
+																	<DataStatus>dsInfo</DataStatus>
+																	<DataType>dtInteger</DataType>
+																</I_6>
+																<I_7>
+																	<ID>8</ID>
+																	<Name>CLUSTERDISTANCE</Name>
+																	<DataStatus>dsInfo</DataStatus>
+																	<DataType>dtFloat</DataType>
+																</I_7>
+															</Columns>
+														</StatColumns>
+													</Statistics>
+												</BrowseView>
+											</ClusterViewForm>
+										</I_0>
+										<I_1>
+											<ID>2</ID>
+											<Name>TBGMDDiagramVendor</Name>
+											<VendorName>TBGMDDiagramVendor</VendorName>
+											<View3D>1</View3D>
+											<Axis>1</Axis>
+											<LegendAlignment>laRight</LegendAlignment>
+											<ChartType>ctLines</ChartType>
+											<RadiusVal>1</RadiusVal>
+											<SetupVisible>1</SetupVisible>
+											<Rotation>327</Rotation>
+											<Elevation>354</Elevation>
+											<Zoom>84</Zoom>
+											<DiagramColumns>
+												<Columns>
+													<Count>8</Count>
+													<I_0>
+														<ID>1</ID>
+														<Name>COL1</Name>
+														<DataStatus>dsUsable</DataStatus>
+														<DataType>dtString</DataType>
+														<Color>clRed</Color>
+														<ColumnPositionSet>[cpXAxis]</ColumnPositionSet>
+													</I_0>
+													<I_1>
+														<ID>2</ID>
+														<Name>COL3</Name>
+														<DataStatus>dsUnUsable</DataStatus>
+														<DataType>dtFloat</DataType>
+														<Color>clLime</Color>
+														<ColumnPositionSet>[cpZAxis]</ColumnPositionSet>
+													</I_1>
+													<I_2>
+														<ID>3</ID>
+														<Name>COL4</Name>
+														<DataStatus>dsUnUsable</DataStatus>
+														<DataType>dtFloat</DataType>
+														<Color>clBlue</Color>
+														<ColumnPositionSet>[]</ColumnPositionSet>
+													</I_2>
+													<I_3>
+														<ID>4</ID>
+														<Name>COL5</Name>
+														<DataStatus>dsUnUsable</DataStatus>
+														<DataType>dtFloat</DataType>
+														<Color>8421631</Color>
+														<ColumnPositionSet>[]</ColumnPositionSet>
+													</I_3>
+													<I_4>
+														<ID>5</ID>
+														<Name>COL6</Name>
+														<DataStatus>dsUnUsable</DataStatus>
+														<DataType>dtFloat</DataType>
+														<Color>8446927</Color>
+														<ColumnPositionSet>[]</ColumnPositionSet>
+													</I_4>
+													<I_5>
+														<ID>6</ID>
+														<Name>COL2</Name>
+														<DataStatus>dsUnUsable</DataStatus>
+														<DataType>dtString</DataType>
+														<Color>16744576</Color>
+														<ColumnPositionSet>[]</ColumnPositionSet>
+													</I_5>
+													<I_6>
+														<ID>7</ID>
+														<Name>CLUSTERNUMBER</Name>
+														<DataStatus>dsUnUsable</DataStatus>
+														<DataType>dtInteger</DataType>
+														<Color>16744703</Color>
+														<ColumnPositionSet>[cpYAxis]</ColumnPositionSet>
+													</I_6>
+													<I_7>
+														<ID>8</ID>
+														<Name>CLUSTERDISTANCE</Name>
+														<DataStatus>dsUnUsable</DataStatus>
+														<DataType>dtFloat</DataType>
+														<Color>clGreen</Color>
+														<ColumnPositionSet>[]</ColumnPositionSet>
+													</I_7>
+												</Columns>
+											</DiagramColumns>
+										</I_1>
+										<I_2>
+											<ID>3</ID>
+											<Name>TBGBubbleDiagramVendor</Name>
+											<VendorName>TBGBubbleDiagramVendor</VendorName>
+											<View3D>1</View3D>
+											<Axis>1</Axis>
+											<LegendAlignment>laRight</LegendAlignment>
+											<ChartType>ctLines</ChartType>
+											<RadiusVal>1</RadiusVal>
+											<SetupVisible>1</SetupVisible>
+											<Rotation>333</Rotation>
+											<Elevation>356</Elevation>
+											<DiagramColumns>
+												<Columns>
+													<Count>8</Count>
+													<I_0>
+														<ID>1</ID>
+														<Name>COL1</Name>
+														<DataStatus>dsUsable</DataStatus>
+														<DataType>dtString</DataType>
+														<Color>clRed</Color>
+														<ColumnPositionSet>[cpXAxis,cpShape,cpColor]</ColumnPositionSet>
+													</I_0>
+													<I_1>
+														<ID>2</ID>
+														<Name>COL3</Name>
+														<DataStatus>dsUnUsable</DataStatus>
+														<DataType>dtFloat</DataType>
+														<Color>clLime</Color>
+														<ColumnPositionSet>[cpZAxis,cpSize]</ColumnPositionSet>
+													</I_1>
+													<I_2>
+														<ID>3</ID>
+														<Name>COL4</Name>
+														<DataStatus>dsUnUsable</DataStatus>
+														<DataType>dtFloat</DataType>
+														<Color>clBlue</Color>
+														<ColumnPositionSet>[]</ColumnPositionSet>
+													</I_2>
+													<I_3>
+														<ID>4</ID>
+														<Name>COL5</Name>
+														<DataStatus>dsUnUsable</DataStatus>
+														<DataType>dtFloat</DataType>
+														<Color>8421631</Color>
+														<ColumnPositionSet>[]</ColumnPositionSet>
+													</I_3>
+													<I_4>
+														<ID>5</ID>
+														<Name>COL6</Name>
+														<DataStatus>dsUnUsable</DataStatus>
+														<DataType>dtFloat</DataType>
+														<Color>8446927</Color>
+														<ColumnPositionSet>[]</ColumnPositionSet>
+													</I_4>
+													<I_5>
+														<ID>6</ID>
+														<Name>COL2</Name>
+														<DataStatus>dsUnUsable</DataStatus>
+														<DataType>dtString</DataType>
+														<Color>16744576</Color>
+														<ColumnPositionSet>[]</ColumnPositionSet>
+													</I_5>
+													<I_6>
+														<ID>7</ID>
+														<Name>CLUSTERNUMBER</Name>
+														<DataStatus>dsUnUsable</DataStatus>
+														<DataType>dtInteger</DataType>
+														<Color>16744703</Color>
+														<ColumnPositionSet>[cpYAxis]</ColumnPositionSet>
+													</I_6>
+													<I_7>
+														<ID>8</ID>
+														<Name>CLUSTERDISTANCE</Name>
+														<DataStatus>dsUnUsable</DataStatus>
+														<DataType>dtFloat</DataType>
+														<Color>clGreen</Color>
+														<ColumnPositionSet>[]</ColumnPositionSet>
+													</I_7>
+												</Columns>
+											</DiagramColumns>
+										</I_2>
+										<I_3>
+											<ID>4</ID>
+											<Name>TBGCubeViewVendor</Name>
+											<VendorName>TBGCubeViewVendor</VendorName>
+											<Version>4</Version>
+											<TunedDataSource>
+												<Columns>
+													<Count>8</Count>
+													<I_0>
+														<ID>1</ID>
+														<Name>COL1</Name>
+														<DisplayName>Субъект</DisplayName>
+														<DataKind>dkDiscrete</DataKind>
+														<DataStatus>dsDimension</DataStatus>
+														<DataType>dtString</DataType>
+													</I_0>
+													<I_1>
+														<ID>2</ID>
+														<Name>COL3</Name>
+														<DisplayName>Удельный вес городского населения</DisplayName>
+														<DataKind>dkContinuous</DataKind>
+														<DataStatus>dsCase</DataStatus>
+														<DataType>dtFloat</DataType>
+													</I_1>
+													<I_2>
+														<ID>3</ID>
+														<Name>COL4</Name>
+														<DisplayName>Изменение численности</DisplayName>
+														<DataKind>dkContinuous</DataKind>
+														<DataStatus>dsCase</DataStatus>
+														<DataType>dtFloat</DataType>
+													</I_2>
+													<I_3>
+														<ID>4</ID>
+														<Name>COL5</Name>
+														<DisplayName>Среднегодовая численность занятых</DisplayName>
+														<DataKind>dkContinuous</DataKind>
+														<DataStatus>dsCase</DataStatus>
+														<DataType>dtFloat</DataType>
+													</I_3>
+													<I_4>
+														<ID>5</ID>
+														<Name>COL6</Name>
+														<DisplayName>Среднедушевой доход</DisplayName>
+														<DataKind>dkContinuous</DataKind>
+														<DataStatus>dsCase</DataStatus>
+														<DataType>dtFloat</DataType>
+													</I_4>
+													<I_5>
+														<ID>6</ID>
+														<Name>COL2</Name>
+														<DisplayName>Численность</DisplayName>
+														<DataKind>dkDiscrete</DataKind>
+														<DataStatus>dsDimension</DataStatus>
+														<DataType>dtString</DataType>
+													</I_5>
+													<I_6>
+														<ID>7</ID>
+														<Name>CLUSTERNUMBER</Name>
+														<DisplayName>Номер кластера</DisplayName>
+														<DataKind>dkDiscrete</DataKind>
+														<DataStatus>dsCase</DataStatus>
+														<DataType>dtInteger</DataType>
+													</I_6>
+													<I_7>
+														<ID>8</ID>
+														<Name>CLUSTERDISTANCE</Name>
+														<DisplayName>Расстояние до центра кластера</DisplayName>
+														<DataKind>dkContinuous</DataKind>
+														<DataStatus>dsCase</DataStatus>
+														<DataType>dtFloat</DataType>
+													</I_7>
+												</Columns>
+											</TunedDataSource>
+											<CubeSource/>
+											<CubeEngine>
+												<Dimensions>
+													<Dimensions>
+														<Count>2</Count>
+														<I_0>
+															<ID>1</ID>
+															<Name>COL1</Name>
+															<DisplayName>Субъект</DisplayName>
+															<Width>76</Width>
+															<DataType>dtString</DataType>
+															<DimensionType>cdtFree</DimensionType>
+														</I_0>
+														<I_1>
+															<ID>2</ID>
+															<Name>COL2</Name>
+															<DisplayName>Численность</DisplayName>
+															<Width>105</Width>
+															<DataType>dtString</DataType>
+															<DimensionType>cdtFree</DimensionType>
+															<OrderNumber>1</OrderNumber>
+														</I_1>
+													</Dimensions>
+												</Dimensions>
+												<Summaries>
+													<Cases>
+														<Count>7</Count>
+														<I_0>
+															<ID>2</ID>
+															<Name>COL3</Name>
+															<DisplayName>Удельный вес городского населения</DisplayName>
+															<DataType>dtFloat</DataType>
+															<Functions>
+																<cfAvg>
+																	<OrderNumber>2</OrderNumber>
+																	<SubFunctions>
+																		<csfValue>
+																			<Width>128</Width>
+																			<Usable>1</Usable>
+																		</csfValue>
+																	</SubFunctions>
+																</cfAvg>
+															</Functions>
+														</I_0>
+														<I_1>
+															<ID>3</ID>
+															<Name>COL4</Name>
+															<DisplayName>Изменение численности</DisplayName>
+															<DataType>dtFloat</DataType>
+															<Functions>
+																<cfAvg>
+																	<OrderNumber>2</OrderNumber>
+																	<SubFunctions>
+																		<csfValue>
+																			<Width>99</Width>
+																			<Usable>1</Usable>
+																		</csfValue>
+																	</SubFunctions>
+																</cfAvg>
+															</Functions>
+														</I_1>
+														<I_2>
+															<ID>4</ID>
+															<Name>COL5</Name>
+															<DisplayName>Среднегодовая численность занятых</DisplayName>
+															<DataType>dtFloat</DataType>
+															<Functions>
+																<cfAvg>
+																	<OrderNumber>2</OrderNumber>
+																	<SubFunctions>
+																		<csfValue>
+																			<Usable>1</Usable>
+																		</csfValue>
+																	</SubFunctions>
+																</cfAvg>
+															</Functions>
+														</I_2>
+														<I_3>
+															<ID>5</ID>
+															<Name>COL6</Name>
+															<DisplayName>Среднедушевой доход</DisplayName>
+															<DataType>dtFloat</DataType>
+															<Functions>
+																<cfAvg>
+																	<OrderNumber>2</OrderNumber>
+																	<SubFunctions>
+																		<csfValue>
+																			<Usable>1</Usable>
+																		</csfValue>
+																	</SubFunctions>
+																</cfAvg>
+															</Functions>
+														</I_3>
+														<I_4>
+															<ID>6</ID>
+															<Name>CLUSTERNUMBER</Name>
+															<DisplayName>Номер кластера</DisplayName>
+															<DataType>dtInteger</DataType>
+															<Functions>
+																<cfAvg>
+																	<OrderNumber>2</OrderNumber>
+																	<SubFunctions>
+																		<csfValue>
+																			<Usable>1</Usable>
+																		</csfValue>
+																	</SubFunctions>
+																</cfAvg>
+															</Functions>
+														</I_4>
+														<I_5>
+															<ID>7</ID>
+															<Name>CLUSTERDISTANCE</Name>
+															<DisplayName>Расстояние до центра кластера</DisplayName>
+															<DataType>dtFloat</DataType>
+															<Functions>
+																<cfAvg>
+																	<OrderNumber>2</OrderNumber>
+																	<SubFunctions>
+																		<csfValue>
+																			<Usable>1</Usable>
+																		</csfValue>
+																	</SubFunctions>
+																</cfAvg>
+															</Functions>
+														</I_5>
+														<I_6>
+															<ID>1</ID>
+															<Name>CountCase</Name>
+															<DisplayName>Количество</DisplayName>
+															<DataType>dtNone</DataType>
+															<CountCase>1</CountCase>
+														</I_6>
+													</Cases>
+												</Summaries>
+											</CubeEngine>
+											<CubeViewForm>
+												<CubeChartFormVisible>1</CubeChartFormVisible>
+												<CubeChartFormBottomPosition>1</CubeChartFormBottomPosition>
+												<CubeGridForm>
+													<LastExportMask>*.xls</LastExportMask>
+													<PivotTable>
+														<CubeGrid/>
+													</PivotTable>
+												</CubeGridForm>
+												<CubeChartForm>
+													<Axis>1</Axis>
+													<Marks>1</Marks>
+													<LegendVisible>1</LegendVisible>
+													<LegendAlignment>laBottom</LegendAlignment>
+													<ChartType>ctBars</ChartType>
+													<CubeChart>
+														<TrendParams>
+															<ChartFunctionClass>TBGTrendFunction</ChartFunctionClass>
+															<Params>
+																<Period>0</Period>
+															</Params>
+														</TrendParams>
+													</CubeChart>
+												</CubeChartForm>
+											</CubeViewForm>
+										</I_3>
+									</Views>
+								</I_0>
+								<I_1>
+									<ID>2</ID>
+									<VendorName>TBGClusterizationTeachEngineVendor</VendorName>
+									<Name>ClusterizationTeachEngine1</Name>
+									<DisplayName>Кластеризация (N = 4)</DisplayName>
+									<NodeIndex>6</NodeIndex>
+									<Component>
+										<AnalyticEngine>
+											<TunedDataSource>
+												<Columns>
+													<Count>6</Count>
+													<I_0>
+														<ID>1</ID>
+														<Name>COL1</Name>
+														<DisplayName>Субъект</DisplayName>
+														<DataKind>dkDiscrete</DataKind>
+														<DataStatus>dsInfo</DataStatus>
+														<DataType>dtString</DataType>
+													</I_0>
+													<I_1>
+														<ID>3</ID>
+														<Name>COL3</Name>
+														<DisplayName>Удельный вес городского населения</DisplayName>
+														<DataKind>dkContinuous</DataKind>
+														<DataStatus>dsInput</DataStatus>
+														<DataType>dtFloat</DataType>
+													</I_1>
+													<I_2>
+														<ID>4</ID>
+														<Name>COL4</Name>
+														<DisplayName>Изменение численности</DisplayName>
+														<DataKind>dkContinuous</DataKind>
+														<DataStatus>dsInput</DataStatus>
+														<DataType>dtFloat</DataType>
+													</I_2>
+													<I_3>
+														<ID>5</ID>
+														<Name>COL5</Name>
+														<DisplayName>Среднегодовая численность занятых</DisplayName>
+														<DataKind>dkContinuous</DataKind>
+														<DataStatus>dsInput</DataStatus>
+														<DataType>dtFloat</DataType>
+													</I_3>
+													<I_4>
+														<ID>6</ID>
+														<Name>COL6</Name>
+														<DisplayName>Среднедушевой доход</DisplayName>
+														<DataKind>dkContinuous</DataKind>
+														<DataStatus>dsInput</DataStatus>
+														<DataType>dtFloat</DataType>
+													</I_4>
+													<I_5>
+														<ID>7</ID>
+														<Name>COL2</Name>
+														<DisplayName>Численность</DisplayName>
+														<DataKind>dkDiscrete</DataKind>
+														<DataStatus>dsInfo</DataStatus>
+														<DataType>dtString</DataType>
+													</I_5>
+												</Columns>
+												<Statistics>
+													<Version>4</Version>
+													<StartTime>2025.11.25 13:13:01</StartTime>
+													<StopTime>2025.11.25 13:13:01</StopTime>
+													<ElapsedTimeFmt>00:00:00</ElapsedTimeFmt>
+													<StoppedByUser>1</StoppedByUser>
+													<RowCount>72</RowCount>
+													<Items>
+														<Count>6</Count>
+														<I_0>
+															<ID>1</ID>
+															<Name>COL1</Name>
+															<DisplayName>Субъект</DisplayName>
+															<DataKind>dkDiscrete</DataKind>
+															<DataStatus>dsInfo</DataStatus>
+															<DataType>dtString</DataType>
+														</I_0>
+														<I_1>
+															<ID>2</ID>
+															<Name>COL3</Name>
+															<DisplayName>Удельный вес городского населения</DisplayName>
+															<DataKind>dkContinuous</DataKind>
+															<DataStatus>dsUsable</DataStatus>
+															<DataType>dtFloat</DataType>
+															<Computed>[sitMin,sitMax,sitAvg,sitSum,sitSumSq,sitStdDev,sitNullCount,sitUniqueValues,sitUniqueValuesCount,sitTotalCount]</Computed>
+															<Min>67.136810647228</Min>
+															<Max>73.4576337972164</Max>
+															<Avg>70.3205334229055</Avg>
+															<Sum>5063.07840644919</Sum>
+															<SumSq>356400.186913258</SumSq>
+															<StdDev>2.25742159334348</StdDev>
+														</I_1>
+														<I_2>
+															<ID>3</ID>
+															<Name>COL4</Name>
+															<DisplayName>Изменение численности</DisplayName>
+															<DataKind>dkContinuous</DataKind>
+															<DataStatus>dsUsable</DataStatus>
+															<DataType>dtFloat</DataType>
+															<Computed>[sitMin,sitMax,sitAvg,sitSum,sitSumSq,sitStdDev,sitNullCount,sitUniqueValues,sitUniqueValuesCount,sitTotalCount]</Computed>
+															<Min>-0.16924980925386</Min>
+															<Max>0.187262245426977</Max>
+															<Avg>0.009278868103843</Avg>
+															<Sum>0.668078503476696</Sum>
+															<SumSq>0.5871933290439</SumSq>
+															<StdDev>0.0904600383896253</StdDev>
+														</I_2>
+														<I_3>
+															<ID>4</ID>
+															<Name>COL5</Name>
+															<DisplayName>Среднегодовая численность занятых</DisplayName>
+															<DataKind>dkContinuous</DataKind>
+															<DataStatus>dsUsable</DataStatus>
+															<DataType>dtFloat</DataType>
+															<Computed>[sitMin,sitMax,sitAvg,sitSum,sitSumSq,sitStdDev,sitNullCount,sitUniqueValues,sitUniqueValuesCount,sitTotalCount]</Computed>
+															<Min>-589323.356168722</Min>
+															<Max>7611644.54755484</Max>
+															<Avg>1290587.91477525</Avg>
+															<Sum>92922329.8638183</Sum>
+															<SumSq>409918854102313</SumSq>
+															<StdDev>2020996.88888719</StdDev>
+														</I_3>
+														<I_4>
+															<ID>5</ID>
+															<Name>COL6</Name>
+															<DisplayName>Среднедушевой доход</DisplayName>
+															<DataKind>dkContinuous</DataKind>
+															<DataStatus>dsUsable</DataStatus>
+															<DataType>dtFloat</DataType>
+															<Computed>[sitMin,sitMax,sitAvg,sitSum,sitSumSq,sitStdDev,sitNullCount,sitUniqueValues,sitUniqueValuesCount,sitTotalCount]</Computed>
+															<Min>30015.3889458862</Min>
+															<Max>39530.0563917059</Max>
+															<Avg>33144.1579936063</Avg>
+															<Sum>2386379.37553965</Sum>
+															<SumSq>79596641705.6728</SumSq>
+															<StdDev>2659.30905487476</StdDev>
+														</I_4>
+														<I_5>
+															<ID>6</ID>
+															<Name>COL2</Name>
+															<DisplayName>Численность</DisplayName>
+															<DataKind>dkDiscrete</DataKind>
+															<DataStatus>dsInfo</DataStatus>
+															<DataType>dtString</DataType>
+														</I_5>
+													</Items>
+												</Statistics>
+												<Normalizers>
+													<Count>6</Count>
+													<I_0>
+														<ID>1</ID>
+														<Name>COL1</Name>
+														<DisplayName>Субъект</DisplayName>
+														<NormalizerVendor>TBGUnUsableColumnNormalizerVendor</NormalizerVendor>
+														<Normalizer/>
+													</I_0>
+													<I_1>
+														<ID>2</ID>
+														<Name>COL3</Name>
+														<DisplayName>Удельный вес городского населения</DisplayName>
+														<NormalizerVendor>TBGLinearNormalizerVendor</NormalizerVendor>
+														<Normalizer>
+															<Version>1</Version>
+															<NormColumns>
+																<Count>1</Count>
+																<I_0>
+																	<Name>COL3</Name>
+																	<DisplayName>Удельный вес городского населения</DisplayName>
+																	<DataKind>dkContinuous</DataKind>
+																	<DataStatus>dsInput</DataStatus>
+																	<DataType>dtFloat</DataType>
+																</I_0>
+															</NormColumns>
+															<LinearNormalizer>
+																<Enabled>1</Enabled>
+																<Max>1</Max>
+															</LinearNormalizer>
+														</Normalizer>
+													</I_1>
+													<I_2>
+														<ID>3</ID>
+														<Name>COL4</Name>
+														<DisplayName>Изменение численности</DisplayName>
+														<NormalizerVendor>TBGLinearNormalizerVendor</NormalizerVendor>
+														<Normalizer>
+															<Version>1</Version>
+															<NormColumns>
+																<Count>1</Count>
+																<I_0>
+																	<Name>COL4</Name>
+																	<DisplayName>Изменение численности</DisplayName>
+																	<DataKind>dkContinuous</DataKind>
+																	<DataStatus>dsInput</DataStatus>
+																	<DataType>dtFloat</DataType>
+																</I_0>
+															</NormColumns>
+															<LinearNormalizer>
+																<Enabled>1</Enabled>
+																<Max>1</Max>
+															</LinearNormalizer>
+														</Normalizer>
+													</I_2>
+													<I_3>
+														<ID>4</ID>
+														<Name>COL5</Name>
+														<DisplayName>Среднегодовая численность занятых</DisplayName>
+														<NormalizerVendor>TBGLinearNormalizerVendor</NormalizerVendor>
+														<Normalizer>
+															<Version>1</Version>
+															<NormColumns>
+																<Count>1</Count>
+																<I_0>
+																	<Name>COL5</Name>
+																	<DisplayName>Среднегодовая численность занятых</DisplayName>
+																	<DataKind>dkContinuous</DataKind>
+																	<DataStatus>dsInput</DataStatus>
+																	<DataType>dtFloat</DataType>
+																</I_0>
+															</NormColumns>
+															<LinearNormalizer>
+																<Enabled>1</Enabled>
+																<Max>1</Max>
+															</LinearNormalizer>
+														</Normalizer>
+													</I_3>
+													<I_4>
+														<ID>5</ID>
+														<Name>COL6</Name>
+														<DisplayName>Среднедушевой доход</DisplayName>
+														<NormalizerVendor>TBGLinearNormalizerVendor</NormalizerVendor>
+														<Normalizer>
+															<Version>1</Version>
+															<NormColumns>
+																<Count>1</Count>
+																<I_0>
+																	<Name>COL6</Name>
+																	<DisplayName>Среднедушевой доход</DisplayName>
+																	<DataKind>dkContinuous</DataKind>
+																	<DataStatus>dsInput</DataStatus>
+																	<DataType>dtFloat</DataType>
+																</I_0>
+															</NormColumns>
+															<LinearNormalizer>
+																<Enabled>1</Enabled>
+																<Max>1</Max>
+															</LinearNormalizer>
+														</Normalizer>
+													</I_4>
+													<I_5>
+														<ID>6</ID>
+														<Name>COL2</Name>
+														<DisplayName>Численность</DisplayName>
+														<NormalizerVendor>TBGUnUsableColumnNormalizerVendor</NormalizerVendor>
+														<Normalizer/>
+													</I_5>
+												</Normalizers>
+											</TunedDataSource>
+											<Kernel>
+												<State>ksTrained</State>
+												<InputColumns>
+													<Count>4</Count>
+													<I_0>
+														<ID>1</ID>
+														<Name>COL3</Name>
+														<DisplayName>Удельный вес городского населения</DisplayName>
+														<DataKind>dkContinuous</DataKind>
+														<DataStatus>dsInput</DataStatus>
+														<DataType>dtFloat</DataType>
+														<NormalizerIndex>2</NormalizerIndex>
+														<NormColumnIndex>1</NormColumnIndex>
+													</I_0>
+													<I_1>
+														<ID>2</ID>
+														<Name>COL4</Name>
+														<DisplayName>Изменение численности</DisplayName>
+														<DataKind>dkContinuous</DataKind>
+														<DataStatus>dsInput</DataStatus>
+														<DataType>dtFloat</DataType>
+														<NormalizerIndex>3</NormalizerIndex>
+														<NormColumnIndex>1</NormColumnIndex>
+													</I_1>
+													<I_2>
+														<ID>3</ID>
+														<Name>COL5</Name>
+														<DisplayName>Среднегодовая численность занятых</DisplayName>
+														<DataKind>dkContinuous</DataKind>
+														<DataStatus>dsInput</DataStatus>
+														<DataType>dtFloat</DataType>
+														<NormalizerIndex>4</NormalizerIndex>
+														<NormColumnIndex>1</NormColumnIndex>
+													</I_2>
+													<I_3>
+														<ID>4</ID>
+														<Name>COL6</Name>
+														<DisplayName>Среднедушевой доход</DisplayName>
+														<DataKind>dkContinuous</DataKind>
+														<DataStatus>dsInput</DataStatus>
+														<DataType>dtFloat</DataType>
+														<NormalizerIndex>5</NormalizerIndex>
+														<NormColumnIndex>1</NormColumnIndex>
+													</I_3>
+												</InputColumns>
+												<AdditionalColumns>
+													<Count>2</Count>
+													<I_0>
+														<ID>1</ID>
+														<Name>CLUSTERNUMBER</Name>
+														<DisplayName>Номер кластера</DisplayName>
+														<DataKind>dkDiscrete</DataKind>
+														<DataStatus>dsOutput</DataStatus>
+														<DataType>dtInteger</DataType>
+													</I_0>
+													<I_1>
+														<ID>2</ID>
+														<Name>CLUSTERDISTANCE</Name>
+														<DisplayName>Расстояние до центра кластера</DisplayName>
+														<DataKind>dkContinuous</DataKind>
+														<DataStatus>dsOutput</DataStatus>
+														<DataType>dtFloat</DataType>
+													</I_1>
+												</AdditionalColumns>
+												<Clusters>
+													<Count>4</Count>
+													<I_0>
+														<ID>1</ID>
+														<CaseCount>30</CaseCount>
+														<ErrorAvg>0.290290335807124</ErrorAvg>
+														<ErrorMax>0.466909888138459</ErrorMax>
+														<InputWeights>
+															<Count>4</Count>
+															<Values>0.754733035200953;0.414821115112924;0.120040211711008;0.149083047760725</Values>
+														</InputWeights>
+														<OutputStatistics>
+															<Version>4</Version>
+															<StartTime>2025.11.25 13:13:25</StartTime>
+															<StopTime>2025.11.25 13:13:25</StopTime>
+															<ElapsedTimeFmt>00:00:00</ElapsedTimeFmt>
+														</OutputStatistics>
+													</I_0>
+													<I_1>
+														<ID>2</ID>
+														<CaseCount>22</CaseCount>
+														<ErrorAvg>0.265284733697158</ErrorAvg>
+														<ErrorMax>0.452423009982119</ErrorMax>
+														<InputWeights>
+															<Count>4</Count>
+															<Values>0.118203025821194;0.431464690763063;0.12593746268656;0.218348347917731</Values>
+														</InputWeights>
+														<OutputStatistics>
+															<Version>4</Version>
+															<StartTime>2025.11.25 13:13:25</StartTime>
+															<StopTime>2025.11.25 13:13:25</StopTime>
+															<ElapsedTimeFmt>00:00:00</ElapsedTimeFmt>
+														</OutputStatistics>
+													</I_1>
+													<I_2>
+														<ID>3</ID>
+														<CaseCount>8</CaseCount>
+														<ErrorAvg>0.4107423556406</ErrorAvg>
+														<ErrorMax>0.604661492604262</ErrorMax>
+														<InputWeights>
+															<Count>4</Count>
+															<Values>0.991613792850954;0.674259969924601;0.4753903086925;0.693663271446202</Values>
+														</InputWeights>
+														<OutputStatistics>
+															<Version>4</Version>
+															<StartTime>2025.11.25 13:13:25</StartTime>
+															<StopTime>2025.11.25 13:13:25</StopTime>
+															<ElapsedTimeFmt>00:00:00</ElapsedTimeFmt>
+														</OutputStatistics>
+													</I_2>
+													<I_3>
+														<ID>4</ID>
+														<CaseCount>12</CaseCount>
+														<ErrorAvg>0.404439092944498</ErrorAvg>
+														<ErrorMax>0.552169804999169</ErrorMax>
+														<InputWeights>
+															<Count>4</Count>
+															<Values>0.257514007415223;0.727010590803922;0.527469736323343;0.737563331466029</Values>
+														</InputWeights>
+														<OutputStatistics>
+															<Version>4</Version>
+															<StartTime>2025.11.25 13:13:25</StartTime>
+															<StopTime>2025.11.25 13:13:25</StopTime>
+															<ElapsedTimeFmt>00:00:00</ElapsedTimeFmt>
+														</OutputStatistics>
+													</I_3>
+												</Clusters>
+												<InputsMin>
+													<Count>4</Count>
+												</InputsMin>
+												<InputsMax>
+													<Count>4</Count>
+													<Values>1;1;1;1</Values>
+												</InputsMax>
+												<OutputsMin/>
+												<OutputsMax/>
+											</Kernel>
+										</AnalyticEngine>
+										<TeachDataSource>
+											<StartTime>2025.11.25 13:13:25</StartTime>
+											<StopTime>2025.11.25 13:13:25</StopTime>
+											<ElapsedTimeFmt>00:00:00</ElapsedTimeFmt>
+											<DataSourceTypeSet>[dstTeach,dstTest]</DataSourceTypeSet>
+											<SplitType>stRandom</SplitType>
+											<dstTeach>
+												<PercentOfDataSource>100</PercentOfDataSource>
+												<SortOrder>tsoAsc</SortOrder>
+												<SplitOrder>dstTeach</SplitOrder>
+												<Index>
+													<Count>72</Count>
+													<Values>50;28;58;57;36;21;43;48;69;12;26;54;60;52;44;53;49;17;35;71;16;34;70;13;27;55;65;4;10;22;46;61;20;42;45;56;25;51;33;67;8;18;38;29;59;68;9;19;39;32;66;5;11;23;47;64;1;3;7;15;31;63;0;2;6;14;30;62;41;40;37;24</Values>
+												</Index>
+											</dstTeach>
+											<dstTest>
+												<SortOrder>tsoAsc</SortOrder>
+												<SplitOrder>dstTest</SplitOrder>
+												<Index/>
+											</dstTest>
+										</TeachDataSource>
+										<Teacher>
+											<ElapsedTime>62</ElapsedTime>
+											<StartTime>2025.11.25 13:13:25</StartTime>
+											<StopTime>2025.11.25 13:13:25</StopTime>
+											<ElapsedTimeFmt>00:00:00</ElapsedTimeFmt>
+											<StoppedByUser>1</StoppedByUser>
+											<State>tstFinished</State>
+											<InitKernel>1</InitKernel>
+											<ClusterAlgorithmType>catKMeans</ClusterAlgorithmType>
+											<FixClustersCount>4</FixClustersCount>
+											<SignificanceLevel>0.001</SignificanceLevel>
+											<Errors>
+												<RecognitionErr>0.05</RecognitionErr>
+												<dstTeach>
+													<Rows>72</Rows>
+													<Avg>0.315058085777916</Avg>
+													<Max>0.604661492604262</Max>
+												</dstTeach>
+												<dstTest>
+													<Max>-1.7E308</Max>
+												</dstTest>
+											</Errors>
+										</Teacher>
+										<Random>
+											<RandSeed>1822392982</RandSeed>
+										</Random>
+									</Component>
+									<Views>
+										<Count>4</Count>
+										<I_0>
+											<ID>1</ID>
+											<Name>TBGClusterViewVendor</Name>
+											<VendorName>TBGClusterViewVendor</VendorName>
+											<ClusterViewForm>
+												<ImportanceDirection>idClusters</ImportanceDirection>
+												<StatDetailed>1</StatDetailed>
+												<ColumnSettings>
+													<UniqueValueSortType>uvsRefCount</UniqueValueSortType>
+													<UniqueValueSortDirection>sdDesc</UniqueValueSortDirection>
+													<ContinuousCellInfos>[cciConfInt,cciAvg]</ContinuousCellInfos>
+													<DiscreteCellInfos>[]</DiscreteCellInfos>
+													<MinImportance>0</MinImportance>
+													<MaxImportance>100</MaxImportance>
+													<Columns>
+														<Count>4</Count>
+														<I_0>
+															<ID>1</ID>
+															<Name>COL3</Name>
+															<DisplayName>Удельный вес городского населения</DisplayName>
+															<DataKind>dkContinuous</DataKind>
+															<DataStatus>dsUsable</DataStatus>
+															<DataType>dtFloat</DataType>
+														</I_0>
+														<I_1>
+															<ID>2</ID>
+															<Name>COL4</Name>
+															<DisplayName>Изменение численности</DisplayName>
+															<DataKind>dkContinuous</DataKind>
+															<DataStatus>dsUsable</DataStatus>
+															<DataType>dtFloat</DataType>
+														</I_1>
+														<I_2>
+															<ID>3</ID>
+															<Name>COL5</Name>
+															<DisplayName>Среднегодовая численность занятых</DisplayName>
+															<DataKind>dkContinuous</DataKind>
+															<DataStatus>dsUsable</DataStatus>
+															<DataType>dtFloat</DataType>
+														</I_2>
+														<I_3>
+															<ID>4</ID>
+															<Name>COL6</Name>
+															<DisplayName>Среднедушевой доход</DisplayName>
+															<DataKind>dkContinuous</DataKind>
+															<DataStatus>dsUsable</DataStatus>
+															<DataType>dtFloat</DataType>
+														</I_3>
+													</Columns>
+												</ColumnSettings>
+												<ClusterSettings>
+													<SortColumnName>COL3</SortColumnName>
+													<SortColumnDataType>dtFloat</SortColumnDataType>
+													<MinSupport>0</MinSupport>
+													<MaxSupport>100</MaxSupport>
+													<Columns>
+														<Count>4</Count>
+														<I_0>
+															<ID>1</ID>
+															<Name>COL0</Name>
+															<DisplayName>0</DisplayName>
+															<DataKind>dkUndefined</DataKind>
+															<DataStatus>dsUsable</DataStatus>
+															<DataType>dtNone</DataType>
+														</I_0>
+														<I_1>
+															<ID>2</ID>
+															<Name>COL1</Name>
+															<DisplayName>1</DisplayName>
+															<DataKind>dkUndefined</DataKind>
+															<DataStatus>dsUsable</DataStatus>
+															<DataType>dtNone</DataType>
+														</I_1>
+														<I_2>
+															<ID>3</ID>
+															<Name>COL2</Name>
+															<DisplayName>2</DisplayName>
+															<DataKind>dkUndefined</DataKind>
+															<DataStatus>dsUsable</DataStatus>
+															<DataType>dtNone</DataType>
+														</I_2>
+														<I_3>
+															<ID>4</ID>
+															<Name>COL3</Name>
+															<DisplayName>3</DisplayName>
+															<DataKind>dkUndefined</DataKind>
+															<DataStatus>dsUsable</DataStatus>
+															<DataType>dtNone</DataType>
+														</I_3>
+													</Columns>
+												</ClusterSettings>
+											</ClusterViewForm>
+										</I_0>
+										<I_1>
+											<ID>2</ID>
+											<Name>TBGMDDiagramVendor</Name>
+											<VendorName>TBGMDDiagramVendor</VendorName>
+											<View3D>1</View3D>
+											<Axis>1</Axis>
+											<LegendAlignment>laRight</LegendAlignment>
+											<ChartType>ctLines</ChartType>
+											<RadiusVal>1</RadiusVal>
+											<SetupVisible>1</SetupVisible>
+											<Rotation>321</Rotation>
+											<Elevation>349</Elevation>
+											<DiagramColumns>
+												<Columns>
+													<Count>8</Count>
+													<I_0>
+														<ID>1</ID>
+														<Name>COL1</Name>
+														<DataStatus>dsUsable</DataStatus>
+														<DataType>dtString</DataType>
+														<Color>clRed</Color>
+														<ColumnPositionSet>[cpXAxis]</ColumnPositionSet>
+													</I_0>
+													<I_1>
+														<ID>2</ID>
+														<Name>COL3</Name>
+														<DataStatus>dsUnUsable</DataStatus>
+														<DataType>dtFloat</DataType>
+														<Color>clLime</Color>
+														<ColumnPositionSet>[cpZAxis]</ColumnPositionSet>
+													</I_1>
+													<I_2>
+														<ID>3</ID>
+														<Name>COL4</Name>
+														<DataStatus>dsUnUsable</DataStatus>
+														<DataType>dtFloat</DataType>
+														<Color>clBlue</Color>
+														<ColumnPositionSet>[]</ColumnPositionSet>
+													</I_2>
+													<I_3>
+														<ID>4</ID>
+														<Name>COL5</Name>
+														<DataStatus>dsUnUsable</DataStatus>
+														<DataType>dtFloat</DataType>
+														<Color>8421631</Color>
+														<ColumnPositionSet>[]</ColumnPositionSet>
+													</I_3>
+													<I_4>
+														<ID>5</ID>
+														<Name>COL6</Name>
+														<DataStatus>dsUnUsable</DataStatus>
+														<DataType>dtFloat</DataType>
+														<Color>8446927</Color>
+														<ColumnPositionSet>[]</ColumnPositionSet>
+													</I_4>
+													<I_5>
+														<ID>6</ID>
+														<Name>COL2</Name>
+														<DataStatus>dsUnUsable</DataStatus>
+														<DataType>dtString</DataType>
+														<Color>16744576</Color>
+														<ColumnPositionSet>[]</ColumnPositionSet>
+													</I_5>
+													<I_6>
+														<ID>7</ID>
+														<Name>CLUSTERNUMBER</Name>
+														<DataStatus>dsUnUsable</DataStatus>
+														<DataType>dtInteger</DataType>
+														<Color>16744703</Color>
+														<ColumnPositionSet>[cpYAxis]</ColumnPositionSet>
+													</I_6>
+													<I_7>
+														<ID>8</ID>
+														<Name>CLUSTERDISTANCE</Name>
+														<DataStatus>dsUnUsable</DataStatus>
+														<DataType>dtFloat</DataType>
+														<Color>clGreen</Color>
+														<ColumnPositionSet>[]</ColumnPositionSet>
+													</I_7>
+												</Columns>
+											</DiagramColumns>
+										</I_1>
+										<I_2>
+											<ID>3</ID>
+											<Name>TBGBubbleDiagramVendor</Name>
+											<VendorName>TBGBubbleDiagramVendor</VendorName>
+											<View3D>1</View3D>
+											<Axis>1</Axis>
+											<LegendAlignment>laRight</LegendAlignment>
+											<ChartType>ctLines</ChartType>
+											<RadiusVal>1</RadiusVal>
+											<SetupVisible>1</SetupVisible>
+											<DiagramColumns>
+												<Columns>
+													<Count>8</Count>
+													<I_0>
+														<ID>1</ID>
+														<Name>COL1</Name>
+														<DataStatus>dsUsable</DataStatus>
+														<DataType>dtString</DataType>
+														<Color>clRed</Color>
+														<ColumnPositionSet>[cpXAxis,cpShape]</ColumnPositionSet>
+													</I_0>
+													<I_1>
+														<ID>2</ID>
+														<Name>COL3</Name>
+														<DataStatus>dsUnUsable</DataStatus>
+														<DataType>dtFloat</DataType>
+														<Color>clLime</Color>
+														<ColumnPositionSet>[cpZAxis,cpSize]</ColumnPositionSet>
+													</I_1>
+													<I_2>
+														<ID>3</ID>
+														<Name>COL4</Name>
+														<DataStatus>dsUnUsable</DataStatus>
+														<DataType>dtFloat</DataType>
+														<Color>clBlue</Color>
+														<ColumnPositionSet>[]</ColumnPositionSet>
+													</I_2>
+													<I_3>
+														<ID>4</ID>
+														<Name>COL5</Name>
+														<DataStatus>dsUnUsable</DataStatus>
+														<DataType>dtFloat</DataType>
+														<Color>8421631</Color>
+														<ColumnPositionSet>[]</ColumnPositionSet>
+													</I_3>
+													<I_4>
+														<ID>5</ID>
+														<Name>COL6</Name>
+														<DataStatus>dsUnUsable</DataStatus>
+														<DataType>dtFloat</DataType>
+														<Color>8446927</Color>
+														<ColumnPositionSet>[]</ColumnPositionSet>
+													</I_4>
+													<I_5>
+														<ID>6</ID>
+														<Name>COL2</Name>
+														<DataStatus>dsUnUsable</DataStatus>
+														<DataType>dtString</DataType>
+														<Color>16744576</Color>
+														<ColumnPositionSet>[]</ColumnPositionSet>
+													</I_5>
+													<I_6>
+														<ID>7</ID>
+														<Name>CLUSTERNUMBER</Name>
+														<DataStatus>dsUnUsable</DataStatus>
+														<DataType>dtInteger</DataType>
+														<Color>16744703</Color>
+														<ColumnPositionSet>[cpYAxis,cpColor]</ColumnPositionSet>
+													</I_6>
+													<I_7>
+														<ID>8</ID>
+														<Name>CLUSTERDISTANCE</Name>
+														<DataStatus>dsUnUsable</DataStatus>
+														<DataType>dtFloat</DataType>
+														<Color>clGreen</Color>
+														<ColumnPositionSet>[]</ColumnPositionSet>
+													</I_7>
+												</Columns>
+											</DiagramColumns>
+										</I_2>
+										<I_3>
+											<ID>4</ID>
+											<Name>TBGCubeViewVendor</Name>
+											<VendorName>TBGCubeViewVendor</VendorName>
+											<Version>4</Version>
+											<TunedDataSource>
+												<Columns>
+													<Count>8</Count>
+													<I_0>
+														<ID>1</ID>
+														<Name>COL1</Name>
+														<DisplayName>Субъект</DisplayName>
+														<DataKind>dkDiscrete</DataKind>
+														<DataStatus>dsDimension</DataStatus>
+														<DataType>dtString</DataType>
+													</I_0>
+													<I_1>
+														<ID>2</ID>
+														<Name>COL3</Name>
+														<DisplayName>Удельный вес городского населения</DisplayName>
+														<DataKind>dkContinuous</DataKind>
+														<DataStatus>dsCase</DataStatus>
+														<DataType>dtFloat</DataType>
+													</I_1>
+													<I_2>
+														<ID>3</ID>
+														<Name>COL4</Name>
+														<DisplayName>Изменение численности</DisplayName>
+														<DataKind>dkContinuous</DataKind>
+														<DataStatus>dsCase</DataStatus>
+														<DataType>dtFloat</DataType>
+													</I_2>
+													<I_3>
+														<ID>4</ID>
+														<Name>COL5</Name>
+														<DisplayName>Среднегодовая численность занятых</DisplayName>
+														<DataKind>dkContinuous</DataKind>
+														<DataStatus>dsCase</DataStatus>
+														<DataType>dtFloat</DataType>
+													</I_3>
+													<I_4>
+														<ID>5</ID>
+														<Name>COL6</Name>
+														<DisplayName>Среднедушевой доход</DisplayName>
+														<DataKind>dkContinuous</DataKind>
+														<DataStatus>dsCase</DataStatus>
+														<DataType>dtFloat</DataType>
+													</I_4>
+													<I_5>
+														<ID>6</ID>
+														<Name>COL2</Name>
+														<DisplayName>Численность</DisplayName>
+														<DataKind>dkDiscrete</DataKind>
+														<DataStatus>dsDimension</DataStatus>
+														<DataType>dtString</DataType>
+													</I_5>
+													<I_6>
+														<ID>7</ID>
+														<Name>CLUSTERNUMBER</Name>
+														<DisplayName>Номер кластера</DisplayName>
+														<DataKind>dkDiscrete</DataKind>
+														<DataStatus>dsCase</DataStatus>
+														<DataType>dtInteger</DataType>
+													</I_6>
+													<I_7>
+														<ID>8</ID>
+														<Name>CLUSTERDISTANCE</Name>
+														<DisplayName>Расстояние до центра кластера</DisplayName>
+														<DataKind>dkContinuous</DataKind>
+														<DataStatus>dsCase</DataStatus>
+														<DataType>dtFloat</DataType>
+													</I_7>
+												</Columns>
+											</TunedDataSource>
+											<CubeSource/>
+											<CubeEngine>
+												<Dimensions>
+													<Dimensions>
+														<Count>2</Count>
+														<I_0>
+															<ID>1</ID>
+															<Name>COL1</Name>
+															<DisplayName>Субъект</DisplayName>
+															<Width>76</Width>
+															<DataType>dtString</DataType>
+															<DimensionType>cdtFree</DimensionType>
+														</I_0>
+														<I_1>
+															<ID>2</ID>
+															<Name>COL2</Name>
+															<DisplayName>Численность</DisplayName>
+															<Width>105</Width>
+															<DataType>dtString</DataType>
+															<DimensionType>cdtFree</DimensionType>
+															<OrderNumber>1</OrderNumber>
+														</I_1>
+													</Dimensions>
+												</Dimensions>
+												<Summaries>
+													<Cases>
+														<Count>7</Count>
+														<I_0>
+															<ID>2</ID>
+															<Name>COL3</Name>
+															<DisplayName>Удельный вес городского населения</DisplayName>
+															<DataType>dtFloat</DataType>
+															<Functions>
+																<cfAvg>
+																	<OrderNumber>2</OrderNumber>
+																	<SubFunctions>
+																		<csfValue>
+																			<Usable>1</Usable>
+																		</csfValue>
+																	</SubFunctions>
+																</cfAvg>
+															</Functions>
+														</I_0>
+														<I_1>
+															<ID>3</ID>
+															<Name>COL4</Name>
+															<DisplayName>Изменение численности</DisplayName>
+															<DataType>dtFloat</DataType>
+															<Functions>
+																<cfAvg>
+																	<OrderNumber>2</OrderNumber>
+																	<SubFunctions>
+																		<csfValue>
+																			<Usable>1</Usable>
+																		</csfValue>
+																	</SubFunctions>
+																</cfAvg>
+															</Functions>
+														</I_1>
+														<I_2>
+															<ID>4</ID>
+															<Name>COL5</Name>
+															<DisplayName>Среднегодовая численность занятых</DisplayName>
+															<DataType>dtFloat</DataType>
+															<Functions>
+																<cfAvg>
+																	<OrderNumber>2</OrderNumber>
+																	<SubFunctions>
+																		<csfValue>
+																			<Usable>1</Usable>
+																		</csfValue>
+																	</SubFunctions>
+																</cfAvg>
+															</Functions>
+														</I_2>
+														<I_3>
+															<ID>5</ID>
+															<Name>COL6</Name>
+															<DisplayName>Среднедушевой доход</DisplayName>
+															<DataType>dtFloat</DataType>
+															<Functions>
+																<cfAvg>
+																	<OrderNumber>2</OrderNumber>
+																	<SubFunctions>
+																		<csfValue>
+																			<Usable>1</Usable>
+																		</csfValue>
+																	</SubFunctions>
+																</cfAvg>
+															</Functions>
+														</I_3>
+														<I_4>
+															<ID>6</ID>
+															<Name>CLUSTERNUMBER</Name>
+															<DisplayName>Номер кластера</DisplayName>
+															<DataType>dtInteger</DataType>
+															<Functions>
+																<cfAvg>
+																	<OrderNumber>2</OrderNumber>
+																	<SubFunctions>
+																		<csfValue>
+																			<Usable>1</Usable>
+																		</csfValue>
+																	</SubFunctions>
+																</cfAvg>
+															</Functions>
+														</I_4>
+														<I_5>
+															<ID>7</ID>
+															<Name>CLUSTERDISTANCE</Name>
+															<DisplayName>Расстояние до центра кластера</DisplayName>
+															<DataType>dtFloat</DataType>
+															<Functions>
+																<cfAvg>
+																	<OrderNumber>2</OrderNumber>
+																	<SubFunctions>
+																		<csfValue>
+																			<Usable>1</Usable>
+																		</csfValue>
+																	</SubFunctions>
+																</cfAvg>
+															</Functions>
+														</I_5>
+														<I_6>
+															<ID>1</ID>
+															<Name>CountCase</Name>
+															<DisplayName>Количество</DisplayName>
+															<DataType>dtNone</DataType>
+															<CountCase>1</CountCase>
+														</I_6>
+													</Cases>
+												</Summaries>
+											</CubeEngine>
+											<CubeViewForm>
+												<CubeChartFormBottomPosition>1</CubeChartFormBottomPosition>
+												<CubeGridForm>
+													<LastExportMask>*.xls</LastExportMask>
+													<PivotTable>
+														<CubeGrid/>
+													</PivotTable>
+												</CubeGridForm>
+												<CubeChartForm>
+													<Axis>1</Axis>
+													<LegendAlignment>laRight</LegendAlignment>
+													<ChartType>ctBars</ChartType>
+													<CubeChart>
+														<TrendParams>
+															<ChartFunctionClass>TBGTrendFunction</ChartFunctionClass>
+															<Params>
+																<Period>0</Period>
+															</Params>
+														</TrendParams>
+													</CubeChart>
+												</CubeChartForm>
+											</CubeViewForm>
+										</I_3>
+									</Views>
+								</I_1>
+							</SubNodes>
+						</I_0>
+						<I_1>
+							<ID>3</ID>
+							<VendorName>TBGClusterizationTeachEngineVendor</VendorName>
+							<Name>ClusterizationTeachEngine2</Name>
+							<DisplayName>Кластеризация (N = 5)</DisplayName>
+							<NodeIndex>7</NodeIndex>
+							<Component>
+								<AnalyticEngine>
+									<TunedDataSource>
+										<Columns>
+											<Count>6</Count>
+											<I_0>
+												<ID>1</ID>
+												<Name>COL1</Name>
+												<DisplayName>Субъект</DisplayName>
+												<DataKind>dkDiscrete</DataKind>
+												<DataStatus>dsInfo</DataStatus>
+												<DataType>dtString</DataType>
+											</I_0>
+											<I_1>
+												<ID>2</ID>
+												<Name>COL2</Name>
+												<DisplayName>Численность</DisplayName>
+												<DataKind>dkDiscrete</DataKind>
+												<DataStatus>dsInfo</DataStatus>
+												<DataType>dtString</DataType>
+											</I_1>
+											<I_2>
+												<ID>3</ID>
+												<Name>COL3</Name>
+												<DisplayName>Удельный вес городского населения</DisplayName>
+												<DataKind>dkContinuous</DataKind>
+												<DataStatus>dsInput</DataStatus>
+												<DataType>dtFloat</DataType>
+											</I_2>
+											<I_3>
+												<ID>4</ID>
+												<Name>COL4</Name>
+												<DisplayName>Изменение численности</DisplayName>
+												<DataKind>dkContinuous</DataKind>
+												<DataStatus>dsInput</DataStatus>
+												<DataType>dtFloat</DataType>
+											</I_3>
+											<I_4>
+												<ID>5</ID>
+												<Name>COL5</Name>
+												<DisplayName>Среднегодовая численность занятых</DisplayName>
+												<DataKind>dkContinuous</DataKind>
+												<DataStatus>dsInput</DataStatus>
+												<DataType>dtFloat</DataType>
+											</I_4>
+											<I_5>
+												<ID>6</ID>
+												<Name>COL6</Name>
+												<DisplayName>Среднедушевой доход</DisplayName>
+												<DataKind>dkContinuous</DataKind>
+												<DataStatus>dsInput</DataStatus>
+												<DataType>dtFloat</DataType>
+											</I_5>
+										</Columns>
+										<Statistics>
+											<Version>4</Version>
+											<StartTime>2025.11.25 13:39:52</StartTime>
+											<StopTime>2025.11.25 13:39:52</StopTime>
+											<ElapsedTimeFmt>00:00:00</ElapsedTimeFmt>
+											<StoppedByUser>1</StoppedByUser>
+											<RowCount>72</RowCount>
+											<Items>
+												<Count>6</Count>
+												<I_0>
+													<ID>1</ID>
+													<Name>COL1</Name>
+													<DisplayName>Субъект</DisplayName>
+													<DataKind>dkDiscrete</DataKind>
 													<DataStatus>dsInfo</DataStatus>
 													<DataType>dtString</DataType>
 												</I_0>
 												<I_1>
 													<ID>2</ID>
-													<Name>type</Name>
+													<Name>COL2</Name>
+													<DisplayName>Численность</DisplayName>
+													<DataKind>dkDiscrete</DataKind>
 													<DataStatus>dsInfo</DataStatus>
-													<DataType>dtFloat</DataType>
+													<DataType>dtString</DataType>
 												</I_1>
 												<I_2>
 													<ID>3</ID>
-													<Name>num</Name>
+													<Name>COL3</Name>
+													<DisplayName>Удельный вес городского населения</DisplayName>
+													<DataKind>dkContinuous</DataKind>
 													<DataStatus>dsInfo</DataStatus>
 													<DataType>dtFloat</DataType>
+													<Computed>[sitMin,sitMax,sitAvg,sitSum,sitSumSq,sitStdDev,sitNullCount,sitUniqueValues,sitUniqueValuesCount,sitTotalCount]</Computed>
+													<Min>34.5</Min>
+													<Max>100</Max>
+													<Avg>70.3305555555555</Avg>
+													<Sum>5063.8</Sum>
+													<SumSq>367841.58</SumSq>
+													<StdDev>12.8379459425969</StdDev>
 												</I_2>
 												<I_3>
 													<ID>4</ID>
-													<Name>without_pop</Name>
+													<Name>COL4</Name>
+													<DisplayName>Изменение численности</DisplayName>
+													<DataKind>dkContinuous</DataKind>
 													<DataStatus>dsInfo</DataStatus>
 													<DataType>dtFloat</DataType>
+													<Computed>[sitMin,sitMax,sitAvg,sitSum,sitSumSq,sitStdDev,sitNullCount,sitUniqueValues,sitUniqueValuesCount,sitTotalCount]</Computed>
+													<Min>-0.6</Min>
+													<Max>1.5</Max>
+													<Avg>-0.00138888888888888</Avg>
+													<Sum>-0.0999999999999992</Sum>
+													<SumSq>11.35</SumSq>
+													<StdDev>0.39982145858876</StdDev>
 												</I_3>
 												<I_4>
 													<ID>5</ID>
-													<Name>with_pop</Name>
+													<Name>COL5</Name>
+													<DisplayName>Среднегодовая численность занятых</DisplayName>
+													<DataKind>dkContinuous</DataKind>
 													<DataStatus>dsInfo</DataStatus>
 													<DataType>dtFloat</DataType>
+													<Computed>[sitMin,sitMax,sitAvg,sitSum,sitSumSq,sitStdDev,sitNullCount,sitUniqueValues,sitUniqueValuesCount,sitTotalCount]</Computed>
+													<Min>20000</Min>
+													<Max>11000000</Max>
+													<Avg>962777.777777778</Avg>
+													<Sum>69320000</Sum>
+													<SumSq>227670400000000</SumSq>
+													<StdDev>1505532.72797112</StdDev>
 												</I_4>
 												<I_5>
 													<ID>6</ID>
 													<Name>COL6</Name>
-													<DataStatus>dsInfo</DataStatus>
+													<DisplayName>Среднедушевой доход</DisplayName>
+													<DataKind>dkContinuous</DataKind>
+													<DataStatus>dsInput</DataStatus>
 													<DataType>dtFloat</DataType>
+													<Computed>[sitMin,sitMax,sitAvg,sitSum,sitSumSq,sitStdDev,sitNullCount,sitUniqueValues,sitUniqueValuesCount,sitTotalCount]</Computed>
+													<Min>28000</Min>
+													<Max>54000</Max>
+													<Avg>33500</Avg>
+													<Sum>2412000</Sum>
+													<SumSq>82610000000</SumSq>
+													<StdDev>5046.26482979187</StdDev>
 												</I_5>
-												<I_6>
-													<ID>7</ID>
-													<Name>COL7</Name>
-													<DataStatus>dsInfo</DataStatus>
-													<DataType>dtFloat</DataType>
-												</I_6>
-												<I_7>
-													<ID>8</ID>
-													<Name>COL8</Name>
-													<DataStatus>dsInfo</DataStatus>
-													<DataType>dtFloat</DataType>
-												</I_7>
-												<I_8>
-													<ID>9</ID>
-													<Name>COL9</Name>
-													<DataStatus>dsInfo</DataStatus>
-													<DataType>dtFloat</DataType>
-												</I_8>
-												<I_9>
-													<ID>10</ID>
-													<Name>COL10</Name>
-													<DataStatus>dsInfo</DataStatus>
-													<DataType>dtFloat</DataType>
-												</I_9>
-											</Columns>
-										</StatColumns>
-									</Statistics>
-								</I_0>
-								<I_1>
-									<ID>2</ID>
-									<Name>TBGDiagramVendor</Name>
-									<VendorName>TBGDiagramVendor</VendorName>
-									<Axis>1</Axis>
-									<LegendAlignment>laRight</LegendAlignment>
-									<ChartType>ctLines</ChartType>
-									<LineWidth>2</LineWidth>
-									<XAxisLabelsFieldName>place</XAxisLabelsFieldName>
-									<DiagramColumns>
-										<Columns>
-											<Count>9</Count>
+											</Items>
+										</Statistics>
+										<Normalizers>
+											<Count>6</Count>
 											<I_0>
 												<ID>1</ID>
-												<Name>type</Name>
-												<DataStatus>dsUsable</DataStatus>
-												<DataType>dtFloat</DataType>
-												<Color>clRed</Color>
+												<Name>COL1</Name>
+												<DisplayName>Субъект</DisplayName>
+												<NormalizerVendor>TBGUnUsableColumnNormalizerVendor</NormalizerVendor>
+												<Normalizer/>
 											</I_0>
 											<I_1>
 												<ID>2</ID>
-												<Name>num</Name>
-												<DataStatus>dsUnUsable</DataStatus>
-												<DataType>dtFloat</DataType>
-												<Color>clLime</Color>
+												<Name>COL2</Name>
+												<DisplayName>Численность</DisplayName>
+												<NormalizerVendor>TBGUnUsableColumnNormalizerVendor</NormalizerVendor>
+												<Normalizer/>
 											</I_1>
 											<I_2>
 												<ID>3</ID>
-												<Name>without_pop</Name>
-												<DataStatus>dsUnUsable</DataStatus>
-												<DataType>dtFloat</DataType>
-												<Color>clBlue</Color>
+												<Name>COL3</Name>
+												<DisplayName>Удельный вес городского населения</DisplayName>
+												<NormalizerVendor>TBGLinearNormalizerVendor</NormalizerVendor>
+												<Normalizer>
+													<Version>1</Version>
+													<NormColumns>
+														<Count>1</Count>
+														<I_0>
+															<Name>COL3</Name>
+															<DisplayName>Удельный вес городского населения</DisplayName>
+															<DataKind>dkContinuous</DataKind>
+															<DataStatus>dsInput</DataStatus>
+															<DataType>dtFloat</DataType>
+														</I_0>
+													</NormColumns>
+													<LinearNormalizer>
+														<Enabled>1</Enabled>
+														<Max>1</Max>
+													</LinearNormalizer>
+												</Normalizer>
 											</I_2>
 											<I_3>
 												<ID>4</ID>
-												<Name>with_pop</Name>
-												<DataStatus>dsUnUsable</DataStatus>
-												<DataType>dtFloat</DataType>
-												<Color>8421631</Color>
+												<Name>COL4</Name>
+												<DisplayName>Изменение численности</DisplayName>
+												<NormalizerVendor>TBGLinearNormalizerVendor</NormalizerVendor>
+												<Normalizer>
+													<Version>1</Version>
+													<NormColumns>
+														<Count>1</Count>
+														<I_0>
+															<Name>COL4</Name>
+															<DisplayName>Изменение численности</DisplayName>
+															<DataKind>dkContinuous</DataKind>
+															<DataStatus>dsInput</DataStatus>
+															<DataType>dtFloat</DataType>
+														</I_0>
+													</NormColumns>
+													<LinearNormalizer>
+														<Enabled>1</Enabled>
+														<Max>1</Max>
+													</LinearNormalizer>
+												</Normalizer>
 											</I_3>
 											<I_4>
 												<ID>5</ID>
-												<Name>COL6</Name>
-												<DataStatus>dsUsable</DataStatus>
-												<DataType>dtFloat</DataType>
-												<Color>8446927</Color>
+												<Name>COL5</Name>
+												<DisplayName>Среднегодовая численность занятых</DisplayName>
+												<NormalizerVendor>TBGLinearNormalizerVendor</NormalizerVendor>
+												<Normalizer>
+													<Version>1</Version>
+													<NormColumns>
+														<Count>1</Count>
+														<I_0>
+															<Name>COL5</Name>
+															<DisplayName>Среднегодовая численность занятых</DisplayName>
+															<DataKind>dkContinuous</DataKind>
+															<DataStatus>dsInput</DataStatus>
+															<DataType>dtFloat</DataType>
+														</I_0>
+													</NormColumns>
+													<LinearNormalizer>
+														<Enabled>1</Enabled>
+														<Max>1</Max>
+													</LinearNormalizer>
+												</Normalizer>
 											</I_4>
 											<I_5>
 												<ID>6</ID>
-												<Name>COL7</Name>
-												<DataStatus>dsUsable</DataStatus>
+												<Name>COL6</Name>
+												<DisplayName>Среднедушевой доход</DisplayName>
+												<NormalizerVendor>TBGLinearNormalizerVendor</NormalizerVendor>
+												<Normalizer>
+													<Version>1</Version>
+													<NormColumns>
+														<Count>1</Count>
+														<I_0>
+															<Name>COL6</Name>
+															<DisplayName>Среднедушевой доход</DisplayName>
+															<DataKind>dkContinuous</DataKind>
+															<DataStatus>dsInput</DataStatus>
+															<DataType>dtFloat</DataType>
+														</I_0>
+													</NormColumns>
+												</Normalizer>
+											</I_5>
+										</Normalizers>
+									</TunedDataSource>
+									<Kernel>
+										<State>ksTrained</State>
+										<InputColumns>
+											<Count>4</Count>
+											<I_0>
+												<ID>1</ID>
+												<Name>COL3</Name>
+												<DisplayName>Удельный вес городского населения</DisplayName>
+												<DataKind>dkContinuous</DataKind>
+												<DataStatus>dsInput</DataStatus>
 												<DataType>dtFloat</DataType>
-												<Color>16744576</Color>
+												<NormalizerIndex>3</NormalizerIndex>
+												<NormColumnIndex>1</NormColumnIndex>
+											</I_0>
+											<I_1>
+												<ID>2</ID>
+												<Name>COL4</Name>
+												<DisplayName>Изменение численности</DisplayName>
+												<DataKind>dkContinuous</DataKind>
+												<DataStatus>dsInput</DataStatus>
+												<DataType>dtFloat</DataType>
+												<NormalizerIndex>4</NormalizerIndex>
+												<NormColumnIndex>1</NormColumnIndex>
+											</I_1>
+											<I_2>
+												<ID>3</ID>
+												<Name>COL5</Name>
+												<DisplayName>Среднегодовая численность занятых</DisplayName>
+												<DataKind>dkContinuous</DataKind>
+												<DataStatus>dsInput</DataStatus>
+												<DataType>dtFloat</DataType>
+												<NormalizerIndex>5</NormalizerIndex>
+												<NormColumnIndex>1</NormColumnIndex>
+											</I_2>
+											<I_3>
+												<ID>4</ID>
+												<Name>COL6</Name>
+												<DisplayName>Среднедушевой доход</DisplayName>
+												<DataKind>dkContinuous</DataKind>
+												<DataStatus>dsInput</DataStatus>
+												<DataType>dtFloat</DataType>
+												<NormalizerIndex>6</NormalizerIndex>
+												<NormColumnIndex>1</NormColumnIndex>
+											</I_3>
+										</InputColumns>
+										<AdditionalColumns>
+											<Count>2</Count>
+											<I_0>
+												<ID>1</ID>
+												<Name>CLUSTERNUMBER</Name>
+												<DisplayName>Номер кластера</DisplayName>
+												<DataKind>dkDiscrete</DataKind>
+												<DataStatus>dsOutput</DataStatus>
+												<DataType>dtInteger</DataType>
+											</I_0>
+											<I_1>
+												<ID>2</ID>
+												<Name>CLUSTERDISTANCE</Name>
+												<DisplayName>Расстояние до центра кластера</DisplayName>
+												<DataKind>dkContinuous</DataKind>
+												<DataStatus>dsOutput</DataStatus>
+												<DataType>dtFloat</DataType>
+											</I_1>
+										</AdditionalColumns>
+										<Clusters>
+											<Count>5</Count>
+											<I_0>
+												<ID>1</ID>
+												<CaseCount>5</CaseCount>
+												<ErrorAvg>3840.00003459049</ErrorAvg>
+												<ErrorMax>5800.00000660073</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.865038167938931;0.609523809523809;0.408014571948998;48800</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.25 13:40:21</StartTime>
+													<StopTime>2025.11.25 13:40:21</StopTime>
+													<ElapsedTimeFmt>00:00:00</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_0>
+											<I_1>
+												<ID>2</ID>
+												<CaseCount>10</CaseCount>
+												<ErrorAvg>0.106981249606059</ErrorAvg>
+												<ErrorMax>0.185091798838214</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.57206106870229;0.195238095238095;0.0339708561020036;31000</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.25 13:40:21</StartTime>
+													<StopTime>2025.11.25 13:40:21</StopTime>
+													<ElapsedTimeFmt>00:00:00</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_1>
+											<I_2>
+												<ID>3</ID>
+												<CaseCount>18</CaseCount>
+												<ErrorAvg>679.012413139183</ErrorAvg>
+												<ErrorMax>1444.44456278973</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.408396946564886;0.343915343915344;0.0327868852459016;29444.4444444444</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.25 13:40:21</StartTime>
+													<StopTime>2025.11.25 13:40:21</StopTime>
+													<ElapsedTimeFmt>00:00:00</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_2>
+											<I_3>
+												<ID>4</ID>
+												<CaseCount>26</CaseCount>
+												<ErrorAvg>621.301816094057</ErrorAvg>
+												<ErrorMax>1192.30781267499</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.525014679976512;0.230769230769231;0.0597590023819532;32807.6923076923</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.25 13:40:21</StartTime>
+													<StopTime>2025.11.25 13:40:21</StopTime>
+													<ElapsedTimeFmt>00:00:00</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_3>
+											<I_4>
+												<ID>5</ID>
+												<CaseCount>13</CaseCount>
+												<ErrorAvg>1431.95268060687</ErrorAvg>
+												<ErrorMax>3461.53847063931</ErrorMax>
+												<InputWeights>
+													<Count>4</Count>
+													<Values>0.641456253669994;0.256410256410256;0.127574611181169;36538.4615384615</Values>
+												</InputWeights>
+												<OutputStatistics>
+													<Version>4</Version>
+													<StartTime>2025.11.25 13:40:21</StartTime>
+													<StopTime>2025.11.25 13:40:21</StopTime>
+													<ElapsedTimeFmt>00:00:00</ElapsedTimeFmt>
+												</OutputStatistics>
+											</I_4>
+										</Clusters>
+										<InputsMin>
+											<Count>4</Count>
+											<Values>0;0;0;28000</Values>
+										</InputsMin>
+										<InputsMax>
+											<Count>4</Count>
+											<Values>1;1;1;54000</Values>
+										</InputsMax>
+										<OutputsMin/>
+										<OutputsMax/>
+									</Kernel>
+								</AnalyticEngine>
+								<TeachDataSource>
+									<StartTime>2025.11.25 13:40:21</StartTime>
+									<StopTime>2025.11.25 13:40:21</StopTime>
+									<ElapsedTimeFmt>00:00:00</ElapsedTimeFmt>
+									<DataSourceTypeSet>[dstTeach,dstTest]</DataSourceTypeSet>
+									<SplitType>stRandom</SplitType>
+									<dstTeach>
+										<PercentOfDataSource>100</PercentOfDataSource>
+										<SortOrder>tsoAsc</SortOrder>
+										<SplitOrder>dstTeach</SplitOrder>
+										<Index>
+											<Count>72</Count>
+											<Values>36;21;43;48;69;12;26;54;60;52;44;53;49;17;35;71;16;34;70;13;27;55;65;4;10;22;46;61;20;42;45;56;25;51;33;67;8;18;38;29;59;68;9;19;39;32;66;5;11;23;47;64;1;3;7;15;31;63;0;2;6;14;30;62;41;40;37;24;50;28;58;57</Values>
+										</Index>
+									</dstTeach>
+									<dstTest>
+										<SortOrder>tsoAsc</SortOrder>
+										<SplitOrder>dstTest</SplitOrder>
+										<Index/>
+									</dstTest>
+								</TeachDataSource>
+								<Teacher>
+									<ElapsedTime>63</ElapsedTime>
+									<StartTime>2025.11.25 13:40:21</StartTime>
+									<StopTime>2025.11.25 13:40:21</StopTime>
+									<ElapsedTimeFmt>00:00:00</ElapsedTimeFmt>
+									<StoppedByUser>1</StoppedByUser>
+									<State>tstFinished</State>
+									<InitKernel>1</InitKernel>
+									<ClusterAlgorithmType>catKMeans</ClusterAlgorithmType>
+									<FixClustersCount>5</FixClustersCount>
+									<SignificanceLevel>0.001</SignificanceLevel>
+									<Errors>
+										<RecognitionErr>0.05</RecognitionErr>
+										<dstTeach>
+											<Rows>72</Rows>
+											<Recog>2</Recog>
+											<Avg>919.340631781786</Avg>
+											<Max>5800.00000660073</Max>
+										</dstTeach>
+										<dstTest>
+											<Max>-1.7E308</Max>
+										</dstTest>
+									</Errors>
+								</Teacher>
+								<Random>
+									<RandSeed>-642895736</RandSeed>
+								</Random>
+							</Component>
+							<Views>
+								<Count>2</Count>
+								<I_0>
+									<ID>1</ID>
+									<Name>TBGClusterViewVendor</Name>
+									<VendorName>TBGClusterViewVendor</VendorName>
+									<ClusterViewForm>
+										<ImportanceDirection>idClusters</ImportanceDirection>
+										<TableDetailed>1</TableDetailed>
+										<StatDetailed>1</StatDetailed>
+										<ColumnSettings>
+											<UniqueValueSortType>uvsRefCount</UniqueValueSortType>
+											<UniqueValueSortDirection>sdDesc</UniqueValueSortDirection>
+											<MinImportance>0</MinImportance>
+											<MaxImportance>100</MaxImportance>
+											<Columns>
+												<Count>4</Count>
+												<I_0>
+													<ID>1</ID>
+													<Name>COL3</Name>
+													<DisplayName>Удельный вес городского населения</DisplayName>
+													<DataKind>dkContinuous</DataKind>
+													<DataStatus>dsUsable</DataStatus>
+													<DataType>dtFloat</DataType>
+												</I_0>
+												<I_1>
+													<ID>2</ID>
+													<Name>COL4</Name>
+													<DisplayName>Изменение численности</DisplayName>
+													<DataKind>dkContinuous</DataKind>
+													<DataStatus>dsUsable</DataStatus>
+													<DataType>dtFloat</DataType>
+												</I_1>
+												<I_2>
+													<ID>3</ID>
+													<Name>COL5</Name>
+													<DisplayName>Среднегодовая численность занятых</DisplayName>
+													<DataKind>dkContinuous</DataKind>
+													<DataStatus>dsUsable</DataStatus>
+													<DataType>dtFloat</DataType>
+												</I_2>
+												<I_3>
+													<ID>4</ID>
+													<Name>COL6</Name>
+													<DisplayName>Среднедушевой доход</DisplayName>
+													<DataKind>dkContinuous</DataKind>
+													<DataStatus>dsUsable</DataStatus>
+													<DataType>dtFloat</DataType>
+												</I_3>
+											</Columns>
+										</ColumnSettings>
+										<ClusterSettings>
+											<SortColumnName>COL3</SortColumnName>
+											<SortColumnDataType>dtFloat</SortColumnDataType>
+											<MinSupport>0</MinSupport>
+											<MaxSupport>100</MaxSupport>
+											<Columns>
+												<Count>5</Count>
+												<I_0>
+													<ID>1</ID>
+													<Name>COL0</Name>
+													<DisplayName>0</DisplayName>
+													<DataKind>dkUndefined</DataKind>
+													<DataStatus>dsUsable</DataStatus>
+													<DataType>dtNone</DataType>
+												</I_0>
+												<I_1>
+													<ID>2</ID>
+													<Name>COL1</Name>
+													<DisplayName>1</DisplayName>
+													<DataKind>dkUndefined</DataKind>
+													<DataStatus>dsUsable</DataStatus>
+													<DataType>dtNone</DataType>
+												</I_1>
+												<I_2>
+													<ID>3</ID>
+													<Name>COL2</Name>
+													<DisplayName>2</DisplayName>
+													<DataKind>dkUndefined</DataKind>
+													<DataStatus>dsUsable</DataStatus>
+													<DataType>dtNone</DataType>
+												</I_2>
+												<I_3>
+													<ID>4</ID>
+													<Name>COL3</Name>
+													<DisplayName>3</DisplayName>
+													<DataKind>dkUndefined</DataKind>
+													<DataStatus>dsUsable</DataStatus>
+													<DataType>dtNone</DataType>
+												</I_3>
+												<I_4>
+													<ID>5</ID>
+													<Name>COL4</Name>
+													<DisplayName>4</DisplayName>
+													<DataKind>dkUndefined</DataKind>
+													<DataStatus>dsUsable</DataStatus>
+													<DataType>dtNone</DataType>
+												</I_4>
+											</Columns>
+										</ClusterSettings>
+										<BrowseView>
+											<BrowseColumns>
+												<Columns>
+													<Count>8</Count>
+													<I_0>
+														<ID>1</ID>
+														<Name>COL1</Name>
+														<DataStatus>dsUsable</DataStatus>
+														<DataType>dtString</DataType>
+														<Width>256</Width>
+													</I_0>
+													<I_1>
+														<ID>2</ID>
+														<Name>COL2</Name>
+														<DataStatus>dsUsable</DataStatus>
+														<DataType>dtString</DataType>
+														<Width>88</Width>
+													</I_1>
+													<I_2>
+														<ID>3</ID>
+														<Name>COL3</Name>
+														<DataStatus>dsUsable</DataStatus>
+														<DataType>dtFloat</DataType>
+														<Alignment>taRightJustify</Alignment>
+														<Width>256</Width>
+													</I_2>
+													<I_3>
+														<ID>4</ID>
+														<Name>COL4</Name>
+														<DataStatus>dsUsable</DataStatus>
+														<DataType>dtFloat</DataType>
+														<Alignment>taRightJustify</Alignment>
+														<Width>168</Width>
+													</I_3>
+													<I_4>
+														<ID>5</ID>
+														<Name>COL5</Name>
+														<DataStatus>dsUsable</DataStatus>
+														<DataType>dtFloat</DataType>
+														<Alignment>taRightJustify</Alignment>
+														<Width>256</Width>
+													</I_4>
+													<I_5>
+														<ID>6</ID>
+														<Name>COL6</Name>
+														<DataStatus>dsUsable</DataStatus>
+														<DataType>dtFloat</DataType>
+														<Alignment>taRightJustify</Alignment>
+														<Width>152</Width>
+													</I_5>
+													<I_6>
+														<ID>7</ID>
+														<Name>CLUSTERNUMBER</Name>
+														<DataStatus>dsUsable</DataStatus>
+														<DataType>dtInteger</DataType>
+														<Alignment>taRightJustify</Alignment>
+														<Width>112</Width>
+													</I_6>
+													<I_7>
+														<ID>8</ID>
+														<Name>CLUSTERDISTANCE</Name>
+														<DataStatus>dsUsable</DataStatus>
+														<DataType>dtFloat</DataType>
+														<Alignment>taRightJustify</Alignment>
+														<Width>232</Width>
+													</I_7>
+												</Columns>
+											</BrowseColumns>
+											<FilterColumns/>
+											<VirtualDataSet>
+												<SortComponent>
+													<StartTime>2025.11.25 13:40:28</StartTime>
+													<StopTime>2025.11.25 13:40:28</StopTime>
+													<ElapsedTimeFmt>00:00:00</ElapsedTimeFmt>
+												</SortComponent>
+											</VirtualDataSet>
+											<Statistics>
+												<Histogram>1</Histogram>
+												<StatMin>1</StatMin>
+												<StatMax>1</StatMax>
+												<StatAvg>1</StatAvg>
+												<StatStdDev>1</StatStdDev>
+												<StatSum>1</StatSum>
+												<StatSumSq>1</StatSumSq>
+												<StatUnique>1</StatUnique>
+												<StatNull>1</StatNull>
+												<StatColumns>
+													<Columns>
+														<Count>8</Count>
+														<I_0>
+															<ID>1</ID>
+															<Name>COL1</Name>
+															<DataStatus>dsInfo</DataStatus>
+															<DataType>dtString</DataType>
+														</I_0>
+														<I_1>
+															<ID>2</ID>
+															<Name>COL2</Name>
+															<DataStatus>dsInfo</DataStatus>
+															<DataType>dtString</DataType>
+														</I_1>
+														<I_2>
+															<ID>3</ID>
+															<Name>COL3</Name>
+															<DataStatus>dsInfo</DataStatus>
+															<DataType>dtFloat</DataType>
+														</I_2>
+														<I_3>
+															<ID>4</ID>
+															<Name>COL4</Name>
+															<DataStatus>dsInfo</DataStatus>
+															<DataType>dtFloat</DataType>
+														</I_3>
+														<I_4>
+															<ID>5</ID>
+															<Name>COL5</Name>
+															<DataStatus>dsInfo</DataStatus>
+															<DataType>dtFloat</DataType>
+														</I_4>
+														<I_5>
+															<ID>6</ID>
+															<Name>COL6</Name>
+															<DataStatus>dsInfo</DataStatus>
+															<DataType>dtFloat</DataType>
+														</I_5>
+														<I_6>
+															<ID>7</ID>
+															<Name>CLUSTERNUMBER</Name>
+															<DataStatus>dsInfo</DataStatus>
+															<DataType>dtInteger</DataType>
+														</I_6>
+														<I_7>
+															<ID>8</ID>
+															<Name>CLUSTERDISTANCE</Name>
+															<DataStatus>dsInfo</DataStatus>
+															<DataType>dtFloat</DataType>
+														</I_7>
+													</Columns>
+												</StatColumns>
+											</Statistics>
+										</BrowseView>
+									</ClusterViewForm>
+								</I_0>
+								<I_1>
+									<ID>2</ID>
+									<Name>TBGCubeViewVendor</Name>
+									<VendorName>TBGCubeViewVendor</VendorName>
+									<Version>4</Version>
+									<TunedDataSource>
+										<Columns>
+											<Count>8</Count>
+											<I_0>
+												<ID>1</ID>
+												<Name>COL1</Name>
+												<DisplayName>Субъект</DisplayName>
+												<DataKind>dkDiscrete</DataKind>
+												<DataStatus>dsDimension</DataStatus>
+												<DataType>dtString</DataType>
+											</I_0>
+											<I_1>
+												<ID>2</ID>
+												<Name>COL2</Name>
+												<DisplayName>Численность</DisplayName>
+												<DataKind>dkDiscrete</DataKind>
+												<DataStatus>dsDimension</DataStatus>
+												<DataType>dtString</DataType>
+											</I_1>
+											<I_2>
+												<ID>3</ID>
+												<Name>COL3</Name>
+												<DisplayName>Удельный вес городского населения</DisplayName>
+												<DataKind>dkContinuous</DataKind>
+												<DataStatus>dsCase</DataStatus>
+												<DataType>dtFloat</DataType>
+											</I_2>
+											<I_3>
+												<ID>4</ID>
+												<Name>COL4</Name>
+												<DisplayName>Изменение численности</DisplayName>
+												<DataKind>dkContinuous</DataKind>
+												<DataStatus>dsCase</DataStatus>
+												<DataType>dtFloat</DataType>
+											</I_3>
+											<I_4>
+												<ID>5</ID>
+												<Name>COL5</Name>
+												<DisplayName>Среднегодовая численность занятых</DisplayName>
+												<DataKind>dkContinuous</DataKind>
+												<DataStatus>dsCase</DataStatus>
+												<DataType>dtFloat</DataType>
+											</I_4>
+											<I_5>
+												<ID>6</ID>
+												<Name>COL6</Name>
+												<DisplayName>Среднедушевой доход</DisplayName>
+												<DataKind>dkContinuous</DataKind>
+												<DataStatus>dsCase</DataStatus>
+												<DataType>dtFloat</DataType>
 											</I_5>
 											<I_6>
 												<ID>7</ID>
-												<Name>COL8</Name>
-												<DataStatus>dsUsable</DataStatus>
-												<DataType>dtFloat</DataType>
-												<Color>16744703</Color>
+												<Name>CLUSTERNUMBER</Name>
+												<DisplayName>Номер кластера</DisplayName>
+												<DataKind>dkDiscrete</DataKind>
+												<DataStatus>dsCase</DataStatus>
+												<DataType>dtInteger</DataType>
 											</I_6>
 											<I_7>
 												<ID>8</ID>
-												<Name>COL9</Name>
-												<DataStatus>dsUsable</DataStatus>
+												<Name>CLUSTERDISTANCE</Name>
+												<DisplayName>Расстояние до центра кластера</DisplayName>
+												<DataKind>dkContinuous</DataKind>
+												<DataStatus>dsCase</DataStatus>
 												<DataType>dtFloat</DataType>
-												<Color>clGreen</Color>
 											</I_7>
-											<I_8>
-												<ID>9</ID>
-												<Name>COL10</Name>
-												<DataStatus>dsUsable</DataStatus>
-												<DataType>dtFloat</DataType>
-												<Color>12615680</Color>
-											</I_8>
 										</Columns>
-									</DiagramColumns>
+									</TunedDataSource>
+									<CubeSource/>
+									<CubeEngine>
+										<Dimensions>
+											<Dimensions>
+												<Count>2</Count>
+												<I_0>
+													<ID>1</ID>
+													<Name>COL1</Name>
+													<DisplayName>Субъект</DisplayName>
+													<Width>76</Width>
+													<DataType>dtString</DataType>
+													<DimensionType>cdtFree</DimensionType>
+												</I_0>
+												<I_1>
+													<ID>2</ID>
+													<Name>COL2</Name>
+													<DisplayName>Численность</DisplayName>
+													<Width>105</Width>
+													<DataType>dtString</DataType>
+													<DimensionType>cdtFree</DimensionType>
+													<OrderNumber>1</OrderNumber>
+												</I_1>
+											</Dimensions>
+										</Dimensions>
+										<Summaries>
+											<Cases>
+												<Count>7</Count>
+												<I_0>
+													<ID>2</ID>
+													<Name>COL3</Name>
+													<DisplayName>Удельный вес городского населения</DisplayName>
+													<DataType>dtFloat</DataType>
+													<Functions>
+														<cfAvg>
+															<OrderNumber>2</OrderNumber>
+															<SubFunctions>
+																<csfValue>
+																	<Usable>1</Usable>
+																</csfValue>
+															</SubFunctions>
+														</cfAvg>
+													</Functions>
+												</I_0>
+												<I_1>
+													<ID>3</ID>
+													<Name>COL4</Name>
+													<DisplayName>Изменение численности</DisplayName>
+													<DataType>dtFloat</DataType>
+													<Functions>
+														<cfAvg>
+															<OrderNumber>2</OrderNumber>
+															<SubFunctions>
+																<csfValue>
+																	<Usable>1</Usable>
+																</csfValue>
+															</SubFunctions>
+														</cfAvg>
+													</Functions>
+												</I_1>
+												<I_2>
+													<ID>4</ID>
+													<Name>COL5</Name>
+													<DisplayName>Среднегодовая численность занятых</DisplayName>
+													<DataType>dtFloat</DataType>
+													<Functions>
+														<cfAvg>
+															<OrderNumber>2</OrderNumber>
+															<SubFunctions>
+																<csfValue>
+																	<Usable>1</Usable>
+																</csfValue>
+															</SubFunctions>
+														</cfAvg>
+													</Functions>
+												</I_2>
+												<I_3>
+													<ID>5</ID>
+													<Name>COL6</Name>
+													<DisplayName>Среднедушевой доход</DisplayName>
+													<DataType>dtFloat</DataType>
+													<Functions>
+														<cfAvg>
+															<OrderNumber>2</OrderNumber>
+															<SubFunctions>
+																<csfValue>
+																	<Usable>1</Usable>
+																</csfValue>
+															</SubFunctions>
+														</cfAvg>
+													</Functions>
+												</I_3>
+												<I_4>
+													<ID>6</ID>
+													<Name>CLUSTERNUMBER</Name>
+													<DisplayName>Номер кластера</DisplayName>
+													<DataType>dtInteger</DataType>
+												</I_4>
+												<I_5>
+													<ID>7</ID>
+													<Name>CLUSTERDISTANCE</Name>
+													<DisplayName>Расстояние до центра кластера</DisplayName>
+													<DataType>dtFloat</DataType>
+													<Functions>
+														<cfAvg>
+															<OrderNumber>2</OrderNumber>
+															<SubFunctions>
+																<csfValue>
+																	<Usable>1</Usable>
+																</csfValue>
+															</SubFunctions>
+														</cfAvg>
+													</Functions>
+												</I_5>
+												<I_6>
+													<ID>1</ID>
+													<Name>CountCase</Name>
+													<DisplayName>Количество</DisplayName>
+													<DataType>dtNone</DataType>
+													<CountCase>1</CountCase>
+												</I_6>
+											</Cases>
+										</Summaries>
+									</CubeEngine>
+									<CubeViewForm>
+										<CubeChartFormBottomPosition>1</CubeChartFormBottomPosition>
+										<CubeGridForm>
+											<LastExportMask>*.xls</LastExportMask>
+											<PivotTable>
+												<CubeGrid/>
+											</PivotTable>
+										</CubeGridForm>
+										<CubeChartForm>
+											<Axis>1</Axis>
+											<LegendAlignment>laRight</LegendAlignment>
+											<ChartType>ctBars</ChartType>
+											<CubeChart>
+												<TrendParams>
+													<ChartFunctionClass>TBGTrendFunction</ChartFunctionClass>
+													<Params>
+														<Period>0</Period>
+													</Params>
+												</TrendParams>
+											</CubeChart>
+										</CubeChartForm>
+									</CubeViewForm>
 								</I_1>
 							</Views>
-						</I_0>
+						</I_1>
 					</SubNodes>
 				</I_0>
 			</SubNodes>
