@@ -1,0 +1,2 @@
+file_path,is_vulnerable,cvss_score,cwe,loc,comment_lines,comment_ratio,function_count,control_flow_count,import_count,class_count,recent_commits_for_file,unique_authors,file_age_days,additions,deletions,changes
+sql/hive-thriftserver/src/main/java/org/apache/hive/service/CookieSigner.java,1,5.9,CWE-209,97,40,0.4124,4,12,6,2,10,7,3391,1,2,3

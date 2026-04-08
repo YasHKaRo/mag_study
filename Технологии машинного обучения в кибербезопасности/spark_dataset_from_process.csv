@@ -1,0 +1,2 @@
+cve_id,file_path,fix_commit,parent_sha,published,cvss_score,cwe,is_vulnerable,additions,deletions,changes,loc,comment_lines,comment_ratio,function_count,control_flow_count,import_count,class_count,recent_commits_for_file,unique_authors,first_seen_date,last_seen_date,file_age_days
+CVE-2024-23945,sql/hive-thriftserver/src/main/java/org/apache/hive/service/CookieSigner.java,cf59b1f51c16301f689b4e0f17ba4dbd140e1b19,4a0ed9cd7253e42c35e6e95587ba0f005df0c856,2024-12-23 16:15:05.590,5.9,CWE-209,1,1,2,3,97,40,0.4124,4,12,6,2,10,7,2016-04-29,2025-08-11,3391

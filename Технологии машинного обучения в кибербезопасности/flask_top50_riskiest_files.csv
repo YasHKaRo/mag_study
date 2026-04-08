@@ -1,0 +1,92 @@
+file,hash,date,author,message,is_vuln,file_commits,unique_authors,file_age_days,security_touch_ratio,loc,func_cnt,ccn,avg_ccn,max_ccn,token_count,avg_params,pred_proba,pred_label
+tests\flask_tests.py,3088a9371e065808fd0091741f62bc242bcab1f9,2010-04-20,unknown,"Make it easier to associate a rule, endpoint and view_function
+This resolves http://github.com/mitsuhiko/flask/issues/issue/11",0,7,1,5,0.1429,224,42,45,1.071,3,925,0.524,0.5426934602049708,1
+tests\flask_tests.py,95750b3287bfa21fbb706f10a3a9fbcef01c089e,2010-04-19,Armin Ronacher,Documented some routing converter possibilities.,0,8,2,5,0.125,238,46,50,1.087,3,990,0.609,0.4968628857427034,0
+docs\conf.py,bb0e755c808a8541192982ba7b86308b68ff7657,2017-02-11,Jeff Widman,"Migrate various docs links to https (#2180)
+
+Also fixed a few outdated links",0,35,11,2502,0.0286,99,3,3,1.0,1,1261,1.667,0.49414432934160535,0
+docs\conf.py,9dcfd05d295574488bd0c3644599d1e97dcca3da,2017-01-13,Ondřej Nový,"Use SOURCE_DATE_EPOCH for copyright year to make build reproducible
+
+Details: https://wiki.debian.org/ReproducibleBuilds/TimestampsProposal",0,34,10,2473,0.0294,99,3,3,1.0,1,1261,1.667,0.4932595531381513,0
+docs\conf.py,75b85656ddad86cbf0c3adb1128b758242793929,2017-05-04,David Lord,"optionally enable sphinxcontrib.log_cabinet
+collapses old changelog directives
+closes #1704
+closes #1867",0,37,13,2585,0.027,106,3,3,1.0,1,1287,1.667,0.48959049695824025,0
+docs\conf.py,f5adb61b28f240effbba5a4686647c2af6e85b94,2017-03-06,Static,Fix typos/grammar in docs (#2201),0,36,12,2525,0.0278,99,3,3,1.0,1,1261,1.667,0.48233044722168616,0
+docs\conf.py,386ac92bdd4192450fdff833c7a0d7dbee73ef1e,2017-05-25,Kenneth Reitz,use alabaster,0,38,13,2606,0.0263,93,3,3,1.0,1,1234,1.667,0.4817320308961609,0
+docs\conf.py,08d6de73a893615ef316a9ad88710bd7e6589bf2,2016-11-03,David Lord,switch to packaged sphinx theme,0,33,10,2403,0.0303,90,3,3,1.0,1,1221,1.667,0.4817236947189271,0
+docs\conf.py,97ad0859128a1e6f2ec3efb9efc46c7c40646318,2017-08-01,David Lord,fix links,0,39,14,2674,0.0256,94,3,3,1.0,1,1240,1.667,0.4695731953386417,0
+docs\conf.py,1928f28a6863a8bac27705950ce1327d661f4d2d,2016-06-26,David Lord,"clean up code formatting in some docs
+fix warnings while building docs",0,32,10,2273,0.0312,97,3,3,1.0,1,1251,1.667,0.4563729394204307,0
+tests\flask_tests.py,9f6bc93e4de36fc209eb1203845e9505df1ca379,2010-04-20,Armin Ronacher,"Fixed XSS problem by escaping all slashes in JSON.
+
+This also probes simplejson first to figure out if it escapes slashes
+which it did in earlier vers",0,10,2,6,0.1,257,47,52,1.106,3,1080,0.596,0.436459004265279,0
+tests\flask_tests.py,9f0b2429d638e54cb534b555c393d0770dfc1a8f,2010-04-20,Armin Ronacher,"The testsuite skips JSON tests now is not available and runs the example
+tests as well.",0,9,2,6,0.1111,255,47,52,1.106,3,1069,0.596,0.4339360109850343,0
+docs\conf.py,c3dd7b8e4c9e322c413f4a49e5d15aceafd17c2d,2018-04-09,David Lord,rewrite tutorial docs and example,0,41,14,2924,0.0244,128,6,13,2.167,5,1377,3.167,0.41900568961633794,0
+tests\flask_tests.py,b6e73305392c9de052e51cca6fae8fee12ae231e,2010-04-21,florentx,Use setdefault() because it sets session.modified correctly.,0,11,2,6,0.0909,267,48,53,1.104,3,1118,0.604,0.41516528000206454,0
+docs\conf.py,310fbfcf64f40f237068fddbbbe45315f9935eca,2018-02-08,David Lord,"revert copyright year to project start
+add copyright header to files",0,40,14,2865,0.025,104,5,8,1.6,4,1284,2.4,0.4138331381588767,0
+examples\flaskr\flaskr_tests.py,8fa5e32d9a1fdf042632bd8fcd0b44dd8031b639,2014-09-11,Markus Unterwaditzer,Tests pass now.,0,10,4,1611,0.0,48,7,7,1.0,1,290,1.286,0.4136993639433758,0
+docs\conf.py,18ffe1eaf6c2eeffc898f4e8a590c062c40b30dc,2024-11-20,David Lord,add gettext config for docs,0,74,16,5342,0.027,79,2,6,3.0,5,311,4.0,0.4128140327260571,0
+docs\conf.py,bfffe87d4c2ea255b9a51432bebb3d28741245c4,2025-03-29,David Lord,add ghsa links,0,75,16,5471,0.0267,80,2,6,3.0,5,323,4.0,0.4122673071880685,0
+docs\conf.py,a758915893352f5986c6ee101cdf7e3b7a64fa28,2025-06-09,David Lord,svg logo,0,76,16,5543,0.0263,80,2,6,3.0,5,323,4.0,0.4095036757387946,0
+tests\test_templating.py,08ac3aa4e3739e20d385c4c2973893945f228470,2015-04-06,ThiefMaster,"Allow custom jinja environments
+
+This is useful e.g. when using the new Jinja Environment
+attributes added in mitsuhiko/jinja2#404",0,9,4,206,0.0,316,65,66,1.015,2,1305,0.308,0.4056629251193089,0
+docs\conf.py,85cc71046475f9cb3efd17d496356795961249f9,2025-06-12,David Lord,svg logo,0,77,16,5546,0.026,80,2,6,3.0,5,323,4.0,0.40251061832891477,0
+flask\testsuite\templating.py,f034d8d3451f590fca1badeac5da0230bed9b148,2012-10-07,Armin Ronacher,"Add @template_test() decorator for creating custom jinja2 tests, like existing @template_filter() for filters.  Fixes #332",0,6,3,408,0.0,239,58,58,1.0,1,969,0.707,0.4010580212270479,0
+tests\test_templating.py,33534bb4a9937e6faba5ecec4586519f453369b6,2015-01-02,Parkayun,Happy New Year 2015,0,8,3,112,0.0,309,64,65,1.016,2,1283,0.312,0.39758792843401036,0
+tests\test_reqctx.py,976dfedaa9efdb566333ea829b12751820268f67,2019-05-31,Daniel Pope,Convert make_test_environ_builder into class (fixes #3207),0,18,10,1722,0.0,199,29,33,1.138,2,728,0.655,0.39307528290955135,0
+tests\test_user_error_handler.py,f2f027d1fbc12f3ff24f3e471e11ac56e1a5d869,2020-04-04,David Lord,remove unused module docstrings,0,17,10,1820,0.0,195,44,46,1.045,2,785,0.773,0.39297787382125915,0
+flask\testsuite\templating.py,f34c0281252bf1838e2ec24fe8b064b232a098ef,2012-10-08,Armin Ronacher,Added template tests and made config a true global,0,7,3,408,0.0,249,60,60,1.0,1,1006,0.7,0.3927031537462587,0
+examples\flaskr\flaskr_tests.py,d2d8e66130f8aabf8e0e4b80a42352f8ef93c347,2014-05-02,Armin Ronacher,Fixed flask tests,0,9,4,1478,0.0,48,7,7,1.0,1,290,1.286,0.39055515565686705,0
+tests\test_reqctx.py,025589ee766249652e2e097da05808fe64911ddc,2019-05-06,David Baumgold,"Reformat with black
+
+https://github.com/python/black",0,17,9,1698,0.0,199,29,33,1.138,2,728,0.655,0.3808758953991305,0
+tests\test_user_error_handler.py,524fd0bc8cec7bfe8167c9c98cb5511b01a0f4c6,2020-04-04,David Lord,apply pyupgrade,0,15,10,1820,0.0,195,44,46,1.045,2,791,0.773,0.38082652356140306,0
+tests\test_user_error_handler.py,2ae740dd4903bbe5f3864384bcdf2ab2d4638bce,2020-04-04,David Lord,f-strings everywhere,0,16,10,1820,0.0,195,44,46,1.045,2,794,0.773,0.380694926314445,0
+scripts\flaskext_compat.py,9a70e62b8d545c8de7e3728e544cebe289a39254,2011-09-21,Armin Ronacher,"No longer swallow important import errors.
+
+This implements a simple but elegant method to find out if an import
+error can be swallowed to try the nex",0,2,1,2,0.0,42,4,13,3.25,6,272,2.0,0.379621265853984,0
+flask\testsuite\templating.py,3b393f89f66733f7824a50b33b93eae9999812ad,2013-01-27,Armin Ronacher,"Added template_global, fixes #657",0,8,3,519,0.0,260,62,62,1.0,1,1052,0.694,0.3774170968269124,0
+src\flask\logging.py,6000e80acf931b05b4911c3fa7f3ba33e2b80e64,2024-01-16,David Lord,address mypy strict findings,0,12,4,1690,0.0,34,3,11,3.667,5,314,0.667,0.3737415124669025,0
+src\flask\views.py,54ff9b297276a3add08c8faf1557b5e359b3ab99,2023-11-09,David Lord,use ruff linter and formatter,0,15,4,1622,0.0,60,6,17,2.833,7,813,1.833,0.3725664960126426,0
+src\flask\typing.py,80cf589a26d792820f135591eb8007bca891bf4f,2023-08-19,pgjones,"Correct the error handler typing
+
+It may also be awaitable, as invocations are wrapped in ensure_sync.",0,21,10,845,0.0,63,0,0,0.0,0,397,0.0,0.3723360289500155,0
+src\flask\typing.py,cc80a47f5be6c60e53c42ef9378e6db3b0e183b1,2023-08-19,pgjones,"Widen the response typing
+
+Whilst not strictly true for Flask, it is true for Flask and Quart and
+hence makes it much easier for Quart to extend Flask",0,20,10,845,0.0,60,0,0,0.0,0,388,0.0,0.37171686433085094,0
+src\flask\typing.py,3f6b243cec6859185ea4064e84b33c07cc7febf6,2023-08-19,pgjones,"Support async template context processors
+
+This is useful as there is contextual information that could be loaded
+via IO e.g. information from a datab",0,19,10,845,0.0,60,0,0,0.0,0,387,0.0,0.36975040183461627,0
+tests\test_reqctx.py,b46f5942a528053034fecf210572ee04bc4a3284,2019-06-01,Jon S. Stumpf,address flake8 issues,0,19,11,1723,0.0,198,29,33,1.138,2,722,0.655,0.36967594593276687,0
+tests\test_user_error_handler.py,846ee2c62e369ed06190b8791088748bd3a83557,2020-04-16,jackwardell,add assert message for errorhandler exception type,0,18,10,1832,0.0,201,44,46,1.045,2,805,0.773,0.36698352932828554,0
+tests\test_reqctx.py,43483683b2bc8da85f00ccccdfb8d9d5c77a6bb3,2019-06-01,David Lord,apply reorder-python-imports pre-commit config,0,20,12,1723,0.0,198,29,33,1.138,2,722,0.655,0.3640807386659237,0
+examples\flaskr\flaskr_tests.py,8bb972e5ae647650457bc4e94ff51cb5e34951dd,2013-05-25,Thomas Waldmann,"fix minitwit/flaskr test errors, improve docs about file open mode
+
+app.open_resource needs to get called with the correct mode param (python3
+will re",0,7,2,1137,0.0,47,7,7,1.0,1,286,1.286,0.36262198617637653,0
+flask\testsuite\templating.py,e1d356fb713f3272db2a23f9f898c34c5dc79dc0,2013-05-22,Thomas Waldmann,"ported some more stuff to py 3.3
+
+removed init_jinja_globals hack from app.py after consulting mitsuhiko
+(didn't work on py 3.3 ""as is"")
+
+removed with",0,9,3,634,0.0,259,62,62,1.0,1,1048,0.694,0.36255004953632675,0
+flask\logging.py,310fbfcf64f40f237068fddbbbe45315f9935eca,2018-02-08,David Lord,"revert copyright year to project start
+add copyright header to files",0,12,6,2775,0.0,29,3,11,3.667,5,286,0.667,0.3622292652482389,0
+flask\testsuite\templating.py,05f66ad73543db207791ea5d6a2de2e8eaaf1640,2013-05-22,Markus Unterwaditzer,Fix some literals,0,10,4,635,0.0,259,62,62,1.0,1,1056,0.694,0.35850546879612116,0
+flask\session.py,5e88c8184d19851c4ccc9a74595819bbe374e839,2012-10-08,Armin Ronacher,Removed deprecated and awkward flask.session module,0,7,3,828,0.0,5,0,0,0.0,0,55,0.0,0.35828765950702357,0
+tests\test_regression.py,b46f5942a528053034fecf210572ee04bc4a3284,2019-06-01,Jon S. Stumpf,address flake8 issues,0,14,6,1723,0.0,58,10,14,1.4,4,265,0.7,0.3571705014697625,0
+tests\test_config.py,025589ee766249652e2e097da05808fe64911ddc,2019-05-06,David Baumgold,"Reformat with black
+
+https://github.com/python/black",0,17,6,1698,0.0,154,15,18,1.2,2,656,0.2,0.3565213894299507,0
+examples\flaskr\flaskr_tests.py,52098e1e4fc4d9c962e9ecb09dfbbcc6ac80a4d7,2014-01-02,Daniel Neuhäuser,Happy New Year 2014,0,8,3,1359,0.0,47,7,7,1.0,1,286,1.286,0.3562360323278388,0
+flask\testsuite\templating.py,0b3369355dadb39ac1ce9580d95004233031a287,2012-02-24,Dmitry Shevchenko,Allow loading template from iterable,0,5,2,181,0.0,167,38,38,1.0,1,661,0.658,0.3559022872032176,0
+flask\testsuite\templating.py,5b89355b1c9771431fb8a011094591ad43461b0a,2013-05-22,Daniel Neuhäuser,Response data is bytes,0,11,5,635,0.0,259,62,62,1.0,1,1070,0.694,0.3548830123900479,0
